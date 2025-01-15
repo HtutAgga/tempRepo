@@ -26,7 +26,8 @@ At line:1 char:1
 
 
 
-
+C:\Users\rgbdeveloper01>docker ps
+error during connect: This error may indicate that the docker daemon is not running.: Get "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/containers/json": open //./pipe/docker_engine: Access is denied.s
 
 
 
