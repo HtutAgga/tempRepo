@@ -20,3 +20,39 @@ At line:1 char:1
     + CategoryInfo          : ObjectNotFound: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Ex
    ception
     + FullyQualifiedErrorId : NoMatchFoundForCriteria,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
+
+
+
+
+
+
+
+
+
+
+
+PS C:\Windows\system32> Install-Package -Name Docker -ProviderName DockerMsftProvider -Force
+>>
+WARNING: The property '' cannot be found on this object. Verify that the property exists.
+WARNING: Cannot bind argument to parameter 'Channels' because it is null.
+WARNING: You must specify an object for the Get-Member cmdlet.
+WARNING: The property 'versions' cannot be found on this object. Verify that the property exists.
+WARNING: The property 'channels' cannot be found on this object. Verify that the property exists.
+WARNING: Invalid JSON primitive: .
+Install-Package : No match was found for the specified search criteria and package name 'Docker'. Try
+Get-PackageSource to see all available registered package sources.
+At line:1 char:1
++ Install-Package -Name Docker -ProviderName DockerMsftProvider -Force
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Ex
+   ception
+    + FullyQualifiedErrorId : NoMatchFoundForCriteria,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
+
+PS C:\Windows\system32> Get-PackageSource
+>>
+
+Name                             ProviderName     IsTrusted  Location
+----                             ------------     ---------  --------
+PSGallery                        PowerShellGet    False      https://www.powershellgallery.com/api/v2
+DockerDefault                    DockerMsftPro... False      https://go.microsoft.com/fwlink/?LinkID=825636&clcid=0x409
+
