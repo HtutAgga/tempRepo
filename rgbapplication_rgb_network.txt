@@ -1,0 +1,51 @@
+C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication>docker network inspect rgbapplication_rgb_network
+[
+    {
+        "Name": "rgbapplication_rgb_network",
+        "Id": "8c993b04070f1f8593a799f105a711827b7a3374fa36f7d8faaab5d0e234ae36",
+        "Created": "2025-01-15T04:15:18.510005684Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.18.0.0/16",
+                    "Gateway": "172.18.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "5f910668decfbfb09d02aff5c0c7cbbfe13de5ffa04e42c255dcdb6794e1a0d6": {
+                "Name": "rgb_nginx",
+                "EndpointID": "37da4de2ecc7210e1251d78a0e162ab5418b99782cc1e08893065ed70998911b",
+                "MacAddress": "02:42:ac:12:00:03",
+                "IPv4Address": "172.18.0.3/16",
+                "IPv6Address": ""
+            },
+            "c39b8d27830be2bf9b7e3ec59e7f31bd922d08dafca5761b79badcabf8ed50ab": {
+                "Name": "rgb_app",
+                "EndpointID": "83a666da1a8d55fb3efd14bb2d27d20698d12fa222755316e9264881abc4822f",
+                "MacAddress": "02:42:ac:12:00:02",
+                "IPv4Address": "172.18.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.config-hash": "0487af56874514343753a79a09f05777ab04a2d9835ef3cf6b6caf6f9bfd19a8",
+            "com.docker.compose.network": "rgb_network",
+            "com.docker.compose.project": "rgbapplication",
+            "com.docker.compose.version": "2.31.0"
+        }
+    }
+]
