@@ -1,1 +1,5 @@
  TCP    172.16.66.69:63901     172.16.66.60:1433      ESTABLISHED
+
+
+C:\Users\rgbdeveloper01>docker exec -it rgb_app ping 172.16.66.60
+OCI runtime exec failed: exec failed: unable to start container process: exec: "ping": executable file not found in $PATH: unknown
