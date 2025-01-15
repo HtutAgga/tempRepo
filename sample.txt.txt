@@ -3,3 +3,10 @@
 
 C:\Users\rgbdeveloper01>docker exec -it rgb_app ping 172.16.66.60
 OCI runtime exec failed: exec failed: unable to start container process: exec: "ping": executable file not found in $PATH: unknown
+
+
+root@c39b8d27830b:/var/www/html# apk update && apk add iputils
+bash: apk: command not found
+root@c39b8d27830b:/var/www/html# apk-get update && apk-get install -y iputils-ping
+bash: apk-get: command not found
+root@c39b8d27830b:/var/www/html#
