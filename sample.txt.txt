@@ -21,3 +21,9 @@ ID=debian
 HOME_URL="https://www.debian.org/"
 SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
+
+
+root@c39b8d27830b:/var/www/html# telnet 172.16.66.60 1433
+Trying 172.16.66.60...
+Connected to 172.16.66.60.
+Escape character is '^]'.
