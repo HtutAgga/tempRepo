@@ -1,0 +1,22 @@
+PS C:\Windows\system32> Install-Module -Name DockerMsftProvider -Repository PSGallery -Force                                                                                                                                                    NuGet provider is required to continue
+PowerShellGet requires NuGet provider version '2.8.5.201' or newer to interact with NuGet-based repositories. The NuGet
+ provider must be available in 'C:\Program Files\PackageManagement\ProviderAssemblies' or
+'C:\Users\rgbdeveloper01\AppData\Local\PackageManagement\ProviderAssemblies'. You can also install the NuGet provider
+by running 'Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force'. Do you want PowerShellGet to install
+ and import the NuGet provider now?
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
+PS C:\Windows\system32> Install-Package -Name docker -ProviderName DockerMsftProvider
+WARNING: The property '' cannot be found on this object. Verify that the property exists.
+WARNING: Cannot bind argument to parameter 'Channels' because it is null.
+WARNING: You must specify an object for the Get-Member cmdlet.
+WARNING: The property 'versions' cannot be found on this object. Verify that the property exists.
+WARNING: The property 'channels' cannot be found on this object. Verify that the property exists.
+WARNING: Invalid JSON primitive: .
+Install-Package : No match was found for the specified search criteria and package name 'docker'. Try
+Get-PackageSource to see all available registered package sources.
+At line:1 char:1
++ Install-Package -Name docker -ProviderName DockerMsftProvider
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Ex
+   ception
+    + FullyQualifiedErrorId : NoMatchFoundForCriteria,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
