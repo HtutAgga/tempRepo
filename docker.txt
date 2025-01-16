@@ -12,4 +12,20 @@ At line:1 char:1
    , ServiceCommandException
     + FullyQualifiedErrorId : StartServiceFailed,Microsoft.PowerShell.Commands.RestartServiceCommand
 
+
+
+C:\Windows\system32>docker info
+Client:
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  app: Docker App (Docker Inc., v0.9.1-beta3)
+  buildx: Docker Buildx (Docker Inc., v0.7.1-docker)
+
+Server:
+ERROR: error during connect: In the default daemon configuration on Windows, the docker client must be run with elevated privileges to connect.: Get "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/info": open //./pipe/docker_engine: The system cannot find the file specified.
+errors pretty printing info
+
+
+
 PS C:\ProgramData\Docker\config>
