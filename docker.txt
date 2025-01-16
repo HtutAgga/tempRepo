@@ -1,50 +1,5 @@
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker-compose up -d
-[+] Running 0/1
- - nginx Pulling                                                                                                   3.2s
-no matching manifest for windows/amd64 10.0.20348 in the manifest list entries on this 
-
-
-networks:
-  rgb_network:
-    driver: bridge
-
-services:
-
-  nginx:
-    image: nginx:alpine
-    container_name: rgb_nginx
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - laravel_app_data:/var/www/html
-    ports:
-      - 8080:80
-    depends_on:
-      - app
-    networks:
-      - rgb_network
-
-  
-  app:
-    build:
-      context: .
-    container_name: rgb_app
-    volumes:
-      - laravel_app_data:/var/www/html 
-    ports:
-      - 9000:9000
-    environment:
-      APP_ENV: local
-      APP_DEBUG: true
-      DB_CONNECTION: sqlsrv
-      DB_HOST: 172.16.66.60
-      DB_PORT: 1433
-      DB_DATABASE: RGB_Bottle_Collect
-      DB_USERNAME: sa
-      DB_PASSWORD: sa@123QWEasz
-      DB_TRUST_CERTIFICATE: true
-    networks:
-      - rgb_network
-
-
-volumes:
-  laravel_app_data: # Volume for Laravel application data
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> wsl --set-default-version 2
+>>
+For information on key differences with WSL 2 please visit https://aka.ms/wsl2
+The operation completed successfully.
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication>
