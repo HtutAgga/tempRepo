@@ -1,12 +1,6 @@
-PS C:\Program Files\docker> dir
+PS C:\Program Files\docker> Get-WindowsFeature -Name Hyper-V
+>>
 
-
-    Directory: C:\Program Files\docker
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----         1/15/2025   1:20 PM                cli-plugins
--a----         1/15/2025   1:24 PM       65738240 docker-compose.exe
--a----        12/13/2021  11:44 AM       51735040 docker.exe
--a----        12/13/2021  11:44 AM       58632704 dockerd.exe
+Display Name                                            Name                       Install State
+------------                                            ----                       -------------
+[X] Hyper-V                                             Hyper-V                        Installed
