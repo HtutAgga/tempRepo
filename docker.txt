@@ -1,5 +1,1 @@
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> wsl --set-default-version 2
->>
-For information on key differences with WSL 2 please visit https://aka.ms/wsl2
-The operation completed successfully.
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication>
+rgbdeveloper@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg                                                           File '/usr/share/keyrings/docker-archive-keyring.gpg' exists. Overwrite? (y/N) y                                        curl: (6) Could not resolve host: download.docker.com                                                                                                                        gpg: no valid OpenPGP data found.
