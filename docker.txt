@@ -1,6 +1,42 @@
-PS C:\Program Files\docker> Get-WindowsFeature -Name Hyper-V
->>
+PS C:\Windows\system32> docker info
+Client:
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  app: Docker App (Docker Inc., v0.9.1-beta3)
+  buildx: Docker Buildx (Docker Inc., v0.7.1-docker)
 
-Display Name                                            Name                       Install State
-------------                                            ----                       -------------
-[X] Hyper-V                                             Hyper-V                        Installed
+Server:
+ Containers: 1
+  Running: 0
+  Paused: 0
+  Stopped: 1
+ Images: 0
+ Server Version: 20.10.12
+ Storage Driver: lcow (linux) windowsfilter (windows)
+  LCOW:
+  Windows:
+ Logging Driver: json-file
+ Plugins:
+  Volume: local
+  Network: ics internal l2bridge l2tunnel nat null overlay private transparent
+  Log: awslogs etwlogs fluentd gcplogs gelf json-file local logentries splunk syslog
+ Swarm: inactive
+ Default Isolation: process
+ Kernel Version: 10.0 20348 (20348.1.amd64fre.fe_release.210507-1500)
+ Operating System: Windows Server 2022 Standard Version 2009 (OS Build 20348.2966)
+ OSType: windows
+ Architecture: x86_64
+ CPUs: 16
+ Total Memory: 32GiB
+ Name: GRGRGBSTGSVR
+ ID: BOZE:MXOF:QAES:YZCR:6EHY:PCJX:32FT:5FJY:4YWH:LZWN:YCQT:PP2Q
+ Docker Root Dir: C:\ProgramData\Docker
+ Debug Mode: false
+ Registry: https://index.docker.io/v1/
+ Labels:
+ Experimental: true
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false
+ Product License: Community Engine
