@@ -1,10 +1,26 @@
-^C
-C:\Users\rgbdeveloper01\Desktop\textfile>ping 172.23.64.1
+C:\Users\rgbdeveloper01\Desktop\textfile>ipconfig /all
 
-Pinging 172.23.64.1 with 32 bytes of data:
-Request timed out.
+Windows IP Configuration
 
-Ping statistics for 172.23.64.1:
-    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),
-Control-C
-^C
+   Host Name . . . . . . . . . . . . : GRGRGBSTGSVR
+   Primary Dns Suffix  . . . . . . . :
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Ethernet0:
+
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : vmxnet3 Ethernet Adapter
+   Physical Address. . . . . . . . . : 00-50-56-B2-FA-84
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::292f:e03:4e16:7d13%15(Preferred)
+   IPv4 Address. . . . . . . . . . . : 172.16.66.69(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 172.16.66.1
+   DHCPv6 IAID . . . . . . . . . . . : 100683862
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2E-FC-84-AD-00-50-56-B2-FA-84
+   DNS Servers . . . . . . . . . . . : 8.8.8.8
+                                       8.8.4.4
+   NetBIOS over Tcpip. . . . . . . . : Enabled
