@@ -1,9 +1,21 @@
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> Get-Content "C:\ProgramData\Docker\config\daemon.json" | ConvertFrom-Json
->>
-
-storage-driver log-driver experimental default-runtime
--------------- ---------- ------------ ---------------
-windowsfilter  json-file          True runc
-
-
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker-compose up -d
+[+] Running 0/1
+[+] Running 0/1 Building                                                                                           6.9s
+[+] Running 0/1 Building                                                                                           7.0s
+[+] Running 0/1 Building                                                                                          11.0s
+ - Service app  Building                                                                                          13.4s
+[+] Running 0/1=========>                                      ]  25.07MB/104.3MB
+f9e738459f55:  - Service app  Building                                                                                  f9e738459f55: Pull complete
+[+] Running 0/1ull complete
+b7cd7c321683:  - Service app  Building                                                                                          23.8s Extracting [==================================================>]     489B/489B
+4e9edb0a3990: Pull complete
+e9806a1b8c9d: Pull complete
+ea8d34b7c9df: Pull complete
+[+] Running 0/1ull complete
+[+] Running 0/1ull complete
+ - Service app  Building                                                                                          25.2s
+Status: Downloaded newer image for php:8.2-fpm
+[+] Running 0/1266
+ - Service app  Building                                                                                          25.7s
+Invalid signal: SIGQUIT
 PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication>
