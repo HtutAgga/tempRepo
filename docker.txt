@@ -1,21 +1,45 @@
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker-compose up -d
-[+] Running 0/1
-[+] Running 0/1 Building                                                                                           6.9s
-[+] Running 0/1 Building                                                                                           7.0s
-[+] Running 0/1 Building                                                                                          11.0s
- - Service app  Building                                                                                          13.4s
-[+] Running 0/1=========>                                      ]  25.07MB/104.3MB
-f9e738459f55:  - Service app  Building                                                                                  f9e738459f55: Pull complete
-[+] Running 0/1ull complete
-b7cd7c321683:  - Service app  Building                                                                                          23.8s Extracting [==================================================>]     489B/489B
-4e9edb0a3990: Pull complete
-e9806a1b8c9d: Pull complete
-ea8d34b7c9df: Pull complete
-[+] Running 0/1ull complete
-[+] Running 0/1ull complete
- - Service app  Building                                                                                          25.2s
-Status: Downloaded newer image for php:8.2-fpm
-[+] Running 0/1266
- - Service app  Building                                                                                          25.7s
-Invalid signal: SIGQUIT
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication>
+
+networks:
+  rgb_network:
+    driver: bridge
+
+services:
+
+  nginx:
+    image: nginx:alpine
+    container_name: rgb_nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - laravel_app_data:/var/www/html
+    ports:
+      - 8080:80
+    depends_on:
+      - app
+    networks:
+      - rgb_network
+
+  
+  app:
+    build:
+      context: .
+    container_name: rgb_app
+    volumes:
+      - laravel_app_data:/var/www/html 
+    ports:
+      - 9000:9000
+    environment:
+      APP_ENV: local
+      APP_DEBUG: true
+      DB_CONNECTION: sqlsrv
+      DB_HOST: 172.16.66.60
+      DB_PORT: 1433
+      DB_DATABASE: RGB_Bottle_Collect
+      DB_USERNAME: sa
+      DB_PASSWORD: sa@123QWEasz
+      DB_TRUST_CERTIFICATE: true
+    networks:
+      - rgb_network
+
+
+volumes:
+  laravel_app_data: # Volume for Laravel application data
