@@ -1,28 +1,4 @@
-
-    Directory: C:\Program Files\docker
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----         1/15/2025   1:24 PM       65738240 docker-compose.exe
--a----        12/13/2021  11:44 AM       51735040 docker.exe
--a----        12/13/2021  11:44 AM       58632704 dockerd.exe
-
-    Directory: C:\ProgramData
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        12/24/2024   2:46 PM                AzureConnectedMachineAgent
-d-----        12/24/2024   3:01 PM                GuestConfig
-d-----        12/24/2024   3:02 PM                HybridWorker
-d---s-         1/14/2025   9:55 AM                Microsoft
-d-----         1/14/2025   9:55 AM                Package Cache
-d-----         1/16/2025  10:35 AM                Packages
-d-----        12/24/2024   3:33 PM                regid.1991-06.com.microsoft
-d-----          5/8/2021   2:50 PM                SoftwareDistribution
-d-----          5/8/2021   4:05 PM                ssh
-d-----        12/24/2024   1:39 PM                USOPrivate
-d-----          5/8/2021   2:50 PM                USOShared
-d-----        12/24/2024   9:33 PM                VMware
--a----        12/24/2024   2:58 PM           3198 ntuser.pol
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker info | findstr "OSType"
+>>
+ OSType: windows
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication>
