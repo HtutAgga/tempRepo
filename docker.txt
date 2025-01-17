@@ -1,30 +1,4 @@
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> Install-WindowsFeature -Name Hyper-V
->>
-
-Success Restart Needed Exit Code      Feature Result
-------- -------------- ---------      --------------
-True    No             NoChangeNeeded {}
-
-
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker -v
-Docker version 20.10.12, build e91ed57
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker version
-Client:
- Version:           20.10.12
- API version:       1.41
- Go version:        go1.16.12
- Git commit:        e91ed57
- Built:             Mon Dec 13 11:44:07 2021
- OS/Arch:           windows/amd64
- Context:           default
- Experimental:      true
-
-Server: Docker Engine - Community
- Engine:
-  Version:          20.10.12
-  API version:      1.41 (minimum version 1.24)
-  Go version:       go1.16.12
-  Git commit:       459d0df
-  Built:            Mon Dec 13 11:42:13 2021
-  OS/Arch:          windows/amd64
-  Experimental:     false
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker pull nginx:alpine
+alpine: Pulling from library/nginx
+no matching manifest for windows/amd64 10.0.20348 in the manifest list entries
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication>
