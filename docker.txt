@@ -1,61 +1,27 @@
-# Use the official PHP 8.2 image as the base
-FROM php:8.2-fpm
-
-# Set working directory
-WORKDIR /var/www/html
-
-# Install system dependencies and required extensions
-RUN apt-get update && apt-get install -y \
-    git \
-    unzip \
-    curl \
-    libpng-dev \
-    libonig-dev \
-    libxml2-dev \
-    zip \
-    libzip-dev \
-    gnupg2 \
-    && apt-get clean
-
-# Install SQL Server driver prerequisites
-RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
-    && curl https://packages.microsoft.com/config/debian/11/prod.list > /etc/apt/sources.list.d/mssql-release.list \
-    && apt-get update && ACCEPT_EULA=Y apt-get install -y msodbcsql17 unixodbc-dev
-
-# Install PHP extensions required for MSSQL
-RUN pecl install sqlsrv pdo_sqlsrv \
-    && docker-php-ext-enable sqlsrv pdo_sqlsrv
-
-# Install other PHP extensions
-RUN docker-php-ext-install mbstring exif pcntl bcmath gd zip
-
-# Install Node.js and npm (via the NodeSource repository)
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
-    && apt-get install -y nodejs \
-    && apt-get clean
-
-# Install Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-
-# Copy the Laravel application into the container
-COPY . /var/www/html
-
-# Install Laravel dependencies
-RUN composer install --no-dev --optimize-autoloader
-
-# Install npm dependencies
-RUN npm install
-
-# Copy and set up .env
-RUN cp .env.example .env
-
-# Set permissions for Laravel
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 775 /var/www/html/storage \
-    && chmod -R 775 /var/www/html/bootstrap/cache
-
-# Expose the port for PHP-FPM
-EXPOSE 9000
-
-# Start PHP-FPM server
-CMD ["php-fpm"]
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker-compose up -d
+[+] Running 0/1
+[+] Running 0/1 Building                                                                                           6.8s
+[+] Running 0/1 Building                                                                                           6.9s
+[+] Running 0/1+] Running 0/1
+[+] Running 0/1 Building                                                                                         498.5s
+[+] Running 0/1 Building                                                                                         532.7s
+b40dfa400d77: Pull complete
+Digest: sha256:a7faef3c463f53996b00abff1cad6e979c75230bf9a55fdce77fe99c764971a58MB
+Status: Downloaded newer image for mcr.microsoft.com/windows/servercore:ltsc2022
+ ---> 7f1b8b9185ba
+[+] Running 0/1KDIR C:/var/www/html
+ - Service app  Building                                                                                         580.2s
+Removing intermediate container 4af382833be0
+ ---> 61c16f824b27
+Step 3/11 : RUN powershell -Command     Set-ExecutionPolicy Bypass -Scope Process -Force;     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;     iex ((New-Object System.Net[+] Running 0/1nloadString('https://chocolatey.org/install.ps1'))
+could not be resolved: 'chocolatey.org'"                                                                         606.1s
+At line:1 char:166"DownloadString" with "1" argument(s): "The remote name
+[+] Running 0/1
++ ...  -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('ht ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ - Service app  Building                                                                                         606.2s
+[+] Running 0/1ifiedErrorId : WebException
+ - Service app  Building                                                                                         607.6s
+The command 'cmd /S /C powershell -Command     Set-ExecutionPolicy Bypass -Scope Process -Force;     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;     iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))' returned a non-zero code: 1
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication>

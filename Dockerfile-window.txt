@@ -1,0 +1,36 @@
+# Use a Windows base image with PHP pre-installed
+FROM mcr.microsoft.com/windows/servercore:ltsc2022
+
+# Set working directory
+WORKDIR C:/var/www/html
+
+# Install required software (example: Chocolatey)
+RUN powershell -Command \
+    Set-ExecutionPolicy Bypass -Scope Process -Force; \
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; \
+    iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+# Install PHP extensions and dependencies
+RUN choco install php --version=8.2 \
+    && choco install nodejs-lts \
+    && RefreshEnv
+
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=C:/bin --filename=composer
+
+# Copy application files
+COPY . C:/var/www/html
+
+# Install Laravel dependencies
+RUN composer install --no-dev --optimize-autoloader
+
+# Set permissions
+RUN powershell -Command \
+    icacls "C:/var/www/html/storage" /grant Everyone:(OI)(CI)F /T; \
+    icacls "C:/var/www/html/bootstrap/cache" /grant Everyone:(OI)(CI)F /T
+
+# Expose the port
+EXPOSE 9000
+
+# Start PHP-FPM (or any Windows-compatible PHP server)
+CMD ["php", "-S", "0.0.0.0:9000", "-t", "public"]
