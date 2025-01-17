@@ -1,40 +1,13 @@
-rgbdeveloper@GRGRGBSTGSVR:~$ ping 8.8.8.8
-PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
-From 172.23.79.6 icmp_seq=1 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=2 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=3 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=4 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=5 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=6 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=7 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=8 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=9 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=10 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=11 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=12 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=13 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=14 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=15 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=16 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=17 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=18 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=19 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=20 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=21 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=22 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=26 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=27 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=28 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=29 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=30 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=31 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=32 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=35 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=36 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=37 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=38 Destination Host Unreachable
-From 172.23.79.6 icmp_seq=39 Destination Host Unreachable
-^C
---- 8.8.8.8 ping statistics ---
-40 packets transmitted, 0 received, +34 errors, 100% packet loss, time 40572ms
-pipe 4
+rgbdeveloper@GRGRGBSTGSVR:~$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:fc:02:d8 brd ff:ff:ff:ff:ff:ff
+    inet 172.23.79.6/20 brd 172.23.79.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fefc:2d8/64 scope link
+       valid_lft forever preferred_lft forever
