@@ -1,4 +1,20 @@
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker pull nginx:alpine
-alpine: Pulling from library/nginx
-no matching manifest for windows/amd64 10.0.20348 in the manifest list entries
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication>
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> Restart-Service docker
+>>
+Restart-Service : Failed to start service 'Docker Engine (docker)'.
+At line:1 char:1
++ Restart-Service docker
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (System.ServiceProcess.ServiceController:ServiceController) [Restart-Service]
+   , ServiceCommandException
+    + FullyQualifiedErrorId : StartServiceFailed,Microsoft.PowerShell.Commands.RestartServiceCommand
+
+
+
+this error on when i change daemon.json
+
+{
+    "storage-driver": "windowsfilter",
+    "log-driver": "json-file",
+    "experimental": true,
+    "default-runtime": "runc"
+}
