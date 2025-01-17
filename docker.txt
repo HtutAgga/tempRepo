@@ -1,31 +1,40 @@
-rgbdeveloper@GRGRGBSTGSVR:~$ sudo apt update
-[sudo] password for rgbdeveloper:
-Ign:1 http://archive.ubuntu.com/ubuntu jammy InRelease
-Ign:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
-Ign:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
-Ign:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
-Ign:1 http://archive.ubuntu.com/ubuntu jammy InRelease
-Ign:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
-Ign:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
-Ign:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
-Ign:1 http://archive.ubuntu.com/ubuntu jammy InRelease
-Ign:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
-Ign:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
-Ign:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
-Err:1 http://archive.ubuntu.com/ubuntu jammy InRelease
-  Temporary failure resolving 'archive.ubuntu.com'
-Err:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
-  Temporary failure resolving 'security.ubuntu.com'
-Err:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
-  Temporary failure resolving 'archive.ubuntu.com'
-Err:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
-  Temporary failure resolving 'archive.ubuntu.com'
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-All packages are up to date.
-W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/jammy/InRelease  Temporary failure resolving 'archive.ubuntu.com'
-W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/jammy-updates/InRelease  Temporary failure resolving 'archive.ubuntu.com'
-W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/jammy-backports/InRelease  Temporary failure resolving 'archive.ubuntu.com'
-W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/jammy-security/InRelease  Temporary failure resolving 'security.ubuntu.com'
-W: Some index files failed to download. They have been ignored, or old ones used instead.
+rgbdeveloper@GRGRGBSTGSVR:~$ ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+From 172.23.79.6 icmp_seq=1 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=2 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=3 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=4 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=5 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=6 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=7 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=8 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=9 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=10 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=11 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=12 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=13 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=14 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=15 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=16 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=17 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=18 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=19 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=20 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=21 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=22 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=26 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=27 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=28 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=29 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=30 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=31 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=32 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=35 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=36 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=37 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=38 Destination Host Unreachable
+From 172.23.79.6 icmp_seq=39 Destination Host Unreachable
+^C
+--- 8.8.8.8 ping statistics ---
+40 packets transmitted, 0 received, +34 errors, 100% packet loss, time 40572ms
+pipe 4
