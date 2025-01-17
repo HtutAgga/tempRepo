@@ -1,9 +1,26 @@
-PS C:\Windows\system32> docker ps -a
->>
-CONTAINER ID   IMAGE          COMMAND                   CREATED          STATUS                      PORTS     NAMES
-4ca70426cd28   6ab66d561eef   "cmd /C 'type C:\\hel…"   33 minutes ago   Exited (0) 33 minutes ago             brave_noether
-PS C:\Windows\system32> docker run --rm -it alpine sh
->>
-docker: Error response from daemon: failed to start service utility VM (createreadwrite): kernel 'C:\Program Files\Linux Containers\kernel' not found.
-See 'docker run --help'.
-PS C:\Windows\system32>
+PS C:\Windows\system32> Get-Service Docker
+Get-Service : Cannot find any service with service name 'Docker'.
+At line:1 char:1
++ Get-Service Docker
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Docker:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+
+PS C:\Windows\system32> Get-Service docker
+Get-Service : Cannot find any service with service name 'docker'.
+At line:1 char:1
++ Get-Service docker
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (docker:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+
+PS C:\Windows\system32> Start-Service docker
+Start-Service : Cannot find any service with service name 'docker'.
+At line:1 char:1
++ Start-Service docker
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (docker:String) [Start-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.StartServiceCommand
+
+PS C:\Windows\system32> docker -v
+Docker version 20.10.12, build e91ed57
