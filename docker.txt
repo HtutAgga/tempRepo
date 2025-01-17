@@ -1,26 +1,30 @@
-C:\Users\rgbdeveloper01\Desktop\textfile>ipconfig /all
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> Install-WindowsFeature -Name Hyper-V
+>>
 
-Windows IP Configuration
+Success Restart Needed Exit Code      Feature Result
+------- -------------- ---------      --------------
+True    No             NoChangeNeeded {}
 
-   Host Name . . . . . . . . . . . . : GRGRGBSTGSVR
-   Primary Dns Suffix  . . . . . . . :
-   Node Type . . . . . . . . . . . . : Hybrid
-   IP Routing Enabled. . . . . . . . : No
-   WINS Proxy Enabled. . . . . . . . : No
 
-Ethernet adapter Ethernet0:
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker -v
+Docker version 20.10.12, build e91ed57
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker version
+Client:
+ Version:           20.10.12
+ API version:       1.41
+ Go version:        go1.16.12
+ Git commit:        e91ed57
+ Built:             Mon Dec 13 11:44:07 2021
+ OS/Arch:           windows/amd64
+ Context:           default
+ Experimental:      true
 
-   Connection-specific DNS Suffix  . :
-   Description . . . . . . . . . . . : vmxnet3 Ethernet Adapter
-   Physical Address. . . . . . . . . : 00-50-56-B2-FA-84
-   DHCP Enabled. . . . . . . . . . . : No
-   Autoconfiguration Enabled . . . . : Yes
-   Link-local IPv6 Address . . . . . : fe80::292f:e03:4e16:7d13%15(Preferred)
-   IPv4 Address. . . . . . . . . . . : 172.16.66.69(Preferred)
-   Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Default Gateway . . . . . . . . . : 172.16.66.1
-   DHCPv6 IAID . . . . . . . . . . . : 100683862
-   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2E-FC-84-AD-00-50-56-B2-FA-84
-   DNS Servers . . . . . . . . . . . : 8.8.8.8
-                                       8.8.4.4
-   NetBIOS over Tcpip. . . . . . . . : Enabled
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.12
+  API version:      1.41 (minimum version 1.24)
+  Go version:       go1.16.12
+  Git commit:       459d0df
+  Built:            Mon Dec 13 11:42:13 2021
+  OS/Arch:          windows/amd64
+  Experimental:     false
