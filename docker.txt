@@ -1,20 +1,9 @@
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> Restart-Service docker
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> Get-Content "C:\ProgramData\Docker\config\daemon.json" | ConvertFrom-Json
 >>
-Restart-Service : Failed to start service 'Docker Engine (docker)'.
-At line:1 char:1
-+ Restart-Service docker
-+ ~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OpenError: (System.ServiceProcess.ServiceController:ServiceController) [Restart-Service]
-   , ServiceCommandException
-    + FullyQualifiedErrorId : StartServiceFailed,Microsoft.PowerShell.Commands.RestartServiceCommand
+
+storage-driver log-driver experimental default-runtime
+-------------- ---------- ------------ ---------------
+windowsfilter  json-file          True runc
 
 
-
-this error on when i change daemon.json
-
-{
-    "storage-driver": "windowsfilter",
-    "log-driver": "json-file",
-    "experimental": true,
-    "default-runtime": "runc"
-}
+PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication>
