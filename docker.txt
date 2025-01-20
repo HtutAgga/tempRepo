@@ -1,3 +1,11 @@
-root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication# nohup docker-compose up -d &
-[1] 1104
 root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication# nohup: ignoring input and appending output to 'nohup.out'
+^C
+[1]+  Done                    nohup docker-compose up -d
+root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication# docker ps
+CONTAINER ID   IMAGE                COMMAND                  CREATED              STATUS              PORTS                                       NAMES
+5943fbffe262   nginx:alpine         "/docker-entrypoint.…"   About a minute ago   Up About a minute   0.0.0.0:8080->80/tcp, :::8080->80/tcp       rgb_nginx
+0f4d85743cbd   rgbapplication-app   "docker-php-entrypoi…"   About a minute ago   Up About a minute   0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   rgb_app
+root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication# exit
+exit
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ exit
+logout
