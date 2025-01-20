@@ -1,2 +1,2 @@
-root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication# docker-compose down
-validating /mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication/docker-compose.yml: services.nginx.depends_on must be a list
+[wsl2]
+systemd=true
