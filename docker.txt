@@ -1,67 +1,42 @@
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication> docker-compose up -d
-[+] Running 0/1
-[+] Running 0/1 Building                                                                                                          6.8s
- - Service app  Building                                                                                                          6.9s
-Step 1/10 : FROM mcr.microsoft.com/windows/servercore:ltsc2022
- ---> 7f1b8b9185ba
-Step 2/10 : WORKDIR C:/var/www/html
- ---> Using cache
- ---> 61c16f824b27
-Step 3/10 : RUN powershell -Command     Set-ExecutionPolicy Bypass -Scope Process -Force;     Add-AppxPackage -Path "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx";     Invoke-WebRequest -Uri "https://github.com/microsoft/winget-cli/releases/download/v1.4.10173/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle" -OutFile "AppInstaller.appxbundle";     Add-AppxPackage -Path "AppInstaller.appxbundle";     winget install --id PHP.PHP --exact --silent --accept-source-agreements --accept-package-agreements;     winget install [+] Running 0/1eJS.LTS --exact --silent --accept-source-agreements --accept-package-agreements
- - Service app  Building                                                                                                         11.2s
-Add-AppxPackage : Deployment failed with HRESULT: 0x80073CF0, Package could
-not be opened.
-error 0x80070002: Opening the package from location
-Microsoft.VCLibs.x64.14.00.Desktop.appx failed.
-NOTE: For additional information, look for [ActivityId]
-c2e14e4f-671e-000a-6216-e3c21e67db01 in the Event Log or use the command line
-Get-AppPackageLog -ActivityID c2e14e4f-671e-000a-6216-e3c21e67db01
-At line:1 char:51
-+ ... ess -Force; Add-AppxPackage -Path https://aka.ms/Microsoft.VCLibs.x64 ...
-+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OpenError: (https://aka.ms/...00.Desktop.appx:St
-   ring) [Add-AppxPackage], FileNotFoundException
-    + FullyQualifiedErrorId : DeploymentError,Microsoft.Windows.Appx.PackageMa
-[+] Running 0/1ds.AddAppxPackageCommand
- - Service app  Building                                                                                                         32.1s
-Invoke-WebRequest : The remote name could not be resolved: 'github.com'
-At line:1 char:129
-+ ... sktop.appx; Invoke-WebRequest -Uri https://github.com/microsoft/winge ...
-+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:Htt
-   pWebRequest) [Invoke-WebRequest], WebException
-    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShe
-   ll.Commands.InvokeWebRequestCommand
+networks:
+  rgb_network:
+    driver: bridge
 
-Add-AppxPackage : Cannot find path 'C:\var\www\html\AppInstaller.appxbundle'
-because it does not exist.
-At line:1 char:310
-+ ... ler.appxbundle; Add-AppxPackage -Path AppInstaller.appxbundle; winget ...
-+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (C:\var\www\html\AppInstaller.ap
-   pxbundle:String) [Add-AppxPackage], ItemNotFoundException
-    + FullyQualifiedErrorId : PathNotFound,Microsoft.Windows.Appx.PackageManag
-winget : The term 'winget' is not recognized as the name of a cmdlet,
-function, script file, or operable program. Check the spelling of the name, or                                                   33.0s
-if a path was included, verify that the path is correct and try again.
-At line:1 char:357
-+ ... bundle; Add-AppxPackage -Path AppInstaller.appxbundle; winget install ...
-+                                                            ~~~~~~
-    + CategoryInfo          : ObjectNotFound: (winget:String) [], CommandNotFo
-   undException
-    + FullyQualifiedErrorId : CommandNotFoundException
+services:
 
-[+] Running 0/1
- - Service app  Building                                                                                                         33.1s
-winget : The term 'winget' is not recognized as the name of a cmdlet,
-function, script file, or operable program. Check the spelling of the name, or
-if a path was included, verify that the path is correct and try again.
-At line:1 char:458
-+ ... -accept-source-agreements --accept-package-agreements; winget install ...
-+                                                            ~~~~~~
-    + CategoryInfo          : ObjectNotFound: (winget:String) [], CommandNotFo
-   undException
-[+] Running 0/1ifiedErrorId : CommandNotFoundException
- - Service app  Building                                                                                                         34.5s
-The command 'cmd /S /C powershell -Command     Set-ExecutionPolicy Bypass -Scope Process -Force;     Add-AppxPackage -Path "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx";     Invoke-WebRequest -Uri "https://github.com/microsoft/winget-cli/releases/download/v1.4.10173/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle" -OutFile "AppInstaller.appxbundle";     Add-AppxPackage -Path "AppInstaller.appxbundle";     winget install --id PHP.PHP --exact --silent --accept-source-agreements --accept-package-agreements;     winget install --id OpenJS.NodeJS.LTS --exact --silent --accept-source-agreements --accept-package-agreements' returned a non-zero code: 1
-PS C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication>
+  nginx:
+    image: nginx:alpine
+    container_name: rgb_nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - laravel_app_data:/var/www/html
+    ports:
+      - 8080:80
+    depends_on: app
+    networks:
+      - rgb_network
+
+  app:
+    build:
+      context: .
+    container_name: rgb_app
+    working_dir: /var/www/html
+    volumes:
+      - laravel_app_data:/var/www/html
+    ports:
+      - 9000:9000
+    environment:
+      APP_ENV: local
+      APP_DEBUG: true
+      DB_CONNECTION: sqlsrv
+      DB_HOST: 172.16.66.60
+      DB_PORT: 1433
+      DB_DATABASE: RGB_Bottle_Collect
+      DB_USERNAME: sa
+      DB_PASSWORD: sa@123QWEasz
+      DB_TRUST_CERTIFICATE: true
+    networks:
+      - rgb_network
+
+volumes:
+  laravel_app_data: # Volume for Laravel application data
