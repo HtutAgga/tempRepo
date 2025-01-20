@@ -1,68 +1,44 @@
-C:\Windows\system32>wsl --shutdown
+networks:
+  rgb_network:
+    driver: bridge
 
-C:\Windows\system32>wsl
-wsl: Unknown key 'wsl2.systemd' in C:\Users\rgbdeveloper01\.wslconfig:2
-ubuntu@GRGRGBSTGSVR:/mnt/c/Windows/system32$ systemctl
-  UNIT                                                                                                                 >
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-54bb0662\x2d9582\x2d4e9b\x2da4c2\x2d7a2c5c4899c0-net-eth0.de>
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-d5b8791b\x2d0386\x2d4746\x2da8f9\x2d40e96d42e9d6-pci0386:00->
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-d5b8791b\x2d0386\x2d4746\x2da8f9\x2d40e96d42e9d6-pci0386:00->
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-fd1d2cbd\x2dce7c\x2d535c\x2d966b\x2deb5f811c95f0-host0-targe>
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-fd1d2cbd\x2dce7c\x2d535c\x2d966b\x2deb5f811c95f0-host0-targe>
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-fd1d2cbd\x2dce7c\x2d535c\x2d966b\x2deb5f811c95f0-host0-targe>
-  sys-devices-platform-serial8250-tty-ttyS0.device                                                                     >
-  sys-devices-platform-serial8250-tty-ttyS1.device                                                                     >
-  sys-devices-platform-serial8250-tty-ttyS2.device                                                                     >
-  sys-devices-platform-serial8250-tty-ttyS3.device                                                                     >
-  sys-devices-virtual-block-ram0.device                                                                                >
-  sys-devices-virtual-block-ram1.device                                                                                >
-  sys-devices-virtual-block-ram10.device                                                                               >
-  sys-devices-virtual-block-ram11.device                                                                               >
-  sys-devices-virtual-block-ram12.device                                                                               >
-  sys-devices-virtual-block-ram13.device                                                                               >
-  sys-devices-virtual-block-ram14.device                                                                               >
-  sys-devices-virtual-block-ram15.device                                                                               >
-  sys-devices-virtual-block-ram2.device                                                                                >
-  sys-devices-virtual-block-ram3.device                                                                                >
-  sys-devices-virtual-block-ram4.device                                                                                >
-  sys-devices-virtual-block-ram5.device                                                                                >
-  sys-devices-virtual-block-ram6.device                                                                                >
-  sys-devices-virtual-block-ram7.device                                                                                >
-  sys-devices-virtual-block-ram8.device                                                                                >
-  sys-devices-virtual-block-ram9.device                                                                                >
-  sys-devices-virtual-net-br\x2d200d70efa1b8.device                                                                    >
-  sys-devices-virtual-net-docker0.device                                                                               >
-  sys-devices-virtual-tty-hvc0.device                                                                                  >
-ubuntu@GRGRGBSTGSVR:/mnt/c/Windows/system32$ sudo su
-[sudo] password for ubuntu:
-root@GRGRGBSTGSVR:/mnt/c/Windows/system32# systemctl
-  UNIT                                                                                                                 >
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-54bb0662\x2d9582\x2d4e9b\x2da4c2\x2d7a2c5c4899c0-net-eth0.de>
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-d5b8791b\x2d0386\x2d4746\x2da8f9\x2d40e96d42e9d6-pci0386:00->
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-d5b8791b\x2d0386\x2d4746\x2da8f9\x2d40e96d42e9d6-pci0386:00->
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-fd1d2cbd\x2dce7c\x2d535c\x2d966b\x2deb5f811c95f0-host0-targe>
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-fd1d2cbd\x2dce7c\x2d535c\x2d966b\x2deb5f811c95f0-host0-targe>
-  sys-devices-LNXSYSTM:00-LNXSYBUS:00-ACPI0004:00-VMBUS:00-fd1d2cbd\x2dce7c\x2d535c\x2d966b\x2deb5f811c95f0-host0-targe>
-  sys-devices-platform-serial8250-tty-ttyS0.device                                                                     >
-  sys-devices-platform-serial8250-tty-ttyS1.device                                                                     >
-  sys-devices-platform-serial8250-tty-ttyS2.device                                                                     >
-  sys-devices-platform-serial8250-tty-ttyS3.device                                                                     >
-  sys-devices-virtual-block-ram0.device                                                                                >
-  sys-devices-virtual-block-ram1.device                                                                                >
-  sys-devices-virtual-block-ram10.device                                                                               >
-  sys-devices-virtual-block-ram11.device                                                                               >
-  sys-devices-virtual-block-ram12.device                                                                               >
-  sys-devices-virtual-block-ram13.device                                                                               >
-  sys-devices-virtual-block-ram14.device                                                                               >
-  sys-devices-virtual-block-ram15.device                                                                               >
-  sys-devices-virtual-block-ram2.device                                                                                >
-  sys-devices-virtual-block-ram3.device                                                                                >
-  sys-devices-virtual-block-ram4.device                                                                                >
-  sys-devices-virtual-block-ram5.device                                                                                >
-  sys-devices-virtual-block-ram6.device                                                                                >
-  sys-devices-virtual-block-ram7.device                                                                                >
-  sys-devices-virtual-block-ram8.device                                                                                >
-  sys-devices-virtual-block-ram9.device                                                                                >
-  sys-devices-virtual-net-br\x2d200d70efa1b8.device                                                                    >
-  sys-devices-virtual-net-docker0.device                                                                               >
-lines 1-29
+services:
+  nginx:
+    image: nginx:alpine
+    restart: always
+    container_name: rgb_nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - laravel_app_data:/var/www/html
+    ports:
+      - 8080:80
+    depends_on:
+      - app # Changed from scalar to list
+    networks:
+      - rgb_network
+
+  app:
+    build:
+      context: .
+    container_name: rgb_app
+    restart: always
+    working_dir: /var/www/html
+    volumes:
+      - laravel_app_data:/var/www/html
+    ports:
+      - 9000:9000
+    environment:
+      APP_ENV: local
+      APP_DEBUG: true
+      DB_CONNECTION: sqlsrv
+      DB_HOST: 172.16.66.60
+      DB_PORT: 1433
+      DB_DATABASE: RGB_Bottle_Collect
+      DB_USERNAME: sa
+      DB_PASSWORD: sa@123QWEasz
+      DB_TRUST_CERTIFICATE: true
+    networks:
+      - rgb_network
+
+volumes:
+  laravel_app_data: # Volume for Laravel application data
