@@ -1,3 +1,9 @@
-CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS              PORTS                                       NAMES
-5943fbffe262   nginx:alpine         "/docker-entrypoint.…"   11 minutes ago   Up About a minute   0.0.0.0:8080->80/tcp, :::8080->80/tcp       rgb_nginx
-0f4d85743cbd   rgbapplication-app   "docker-php-entrypoi…"   11 minutes ago   Up About a minute   0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   rgb_app
+
+C:\Users\rgbdeveloper01>netstat -an | find "8080"
+  TCP    127.0.0.1:8080         0.0.0.0:0              LISTENING
+  TCP    [::1]:8080             [::]:0                 LISTENING
+  TCP    [::1]:8080             [::1]:56550            TIME_WAIT
+  TCP    [::1]:8080             [::1]:56557            ESTABLISHED
+  TCP    [::1]:8080             [::1]:56558            FIN_WAIT_2
+  TCP    [::1]:56557            [::1]:8080             ESTABLISHED
+  TCP    [::1]:56558            [::1]:8080             CLOSE_WAIT
