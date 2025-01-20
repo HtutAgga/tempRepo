@@ -1,2 +1,5 @@
-[wsl2]
-systemd=true
+C:\Windows\system32>wsl --shutdown
+
+C:\Windows\system32>wsl
+wsl: Unknown key 'wsl2.systemd' in C:\Users\rgbdeveloper01\.wslconfig:2
+ubuntu@GRGRGBSTGSVR:/mnt/c/Windows/system32$
