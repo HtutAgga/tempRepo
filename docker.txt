@@ -1,4 +1,198 @@
+root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication# docker exec -it rgb_app composer install
+The repository at "/var/www/html" does not have the correct ownership and git refuses to use it:
 
-Warning: require(/var/www/html/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/html/public/index.php on line 34
+fatal: detected dubious ownership in repository at '/var/www/html'
+To add an exception for this directory, call:
 
-Fatal error: Uncaught Error: Failed opening required '/var/www/html/public/../vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/html/public/index.php:34 Stack trace: #0 {main} thrown in /var/www/html/public/index.php on line 34
+        git config --global --add safe.directory /var/www/html
+
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Package operations: 137 installs, 0 updates, 0 removals
+  - Downloading pestphp/pest-plugin (v2.1.1)
+  - Downloading fakerphp/faker (v1.23.1)
+  - Downloading fidry/cpu-core-counter (1.1.0)
+  - Downloading filp/whoops (2.15.4)
+  - Downloading jean85/pretty-package-versions (2.0.6)
+  - Downloading laravel/pint (v1.15.2)
+  - Downloading symfony/yaml (v6.4.3)
+  - Downloading laravel/sail (v1.29.1)
+  - Downloading hamcrest/hamcrest-php (v2.0.1)
+  - Downloading mockery/mockery (1.6.11)
+  - Downloading myclabs/deep-copy (1.11.1)
+  - Downloading sebastian/version (4.0.1)
+  - Downloading sebastian/type (4.0.0)
+  - Downloading sebastian/recursion-context (5.0.0)
+  - Downloading sebastian/object-reflector (3.0.0)
+  - Downloading sebastian/object-enumerator (5.0.0)
+  - Downloading sebastian/global-state (6.0.2)
+  - Downloading sebastian/exporter (5.1.2)
+  - Downloading sebastian/environment (6.1.0)
+  - Downloading sebastian/diff (5.1.1)
+  - Downloading sebastian/comparator (5.0.1)
+  - Downloading sebastian/code-unit (2.0.0)
+  - Downloading sebastian/cli-parser (2.0.1)
+  - Downloading phpunit/php-timer (6.0.0)
+  - Downloading phpunit/php-text-template (3.0.1)
+  - Downloading phpunit/php-invoker (4.0.0)
+  - Downloading phpunit/php-file-iterator (4.1.0)
+  - Downloading theseer/tokenizer (1.2.3)
+  - Downloading sebastian/lines-of-code (2.0.2)
+  - Downloading sebastian/complexity (3.2.0)
+  - Downloading sebastian/code-unit-reverse-lookup (3.0.0)
+  - Downloading phpunit/php-code-coverage (10.1.14)
+  - Downloading phar-io/version (3.2.1)
+  - Downloading phar-io/manifest (2.0.4)
+  - Downloading phpunit/phpunit (10.5.17)
+  - Downloading phpstan/phpdoc-parser (1.28.0)
+  - Downloading phpdocumentor/reflection-common (2.2.0)
+  - Downloading doctrine/deprecations (1.1.3)
+  - Downloading phpdocumentor/type-resolver (1.8.2)
+  - Downloading phpdocumentor/reflection-docblock (5.4.0)
+  - Downloading ta-tikoma/phpunit-architecture-test (0.8.4)
+  - Downloading nunomaduro/collision (v7.10.0)
+  - Downloading pestphp/pest-plugin-arch (v2.7.0)
+  - Downloading brianium/paratest (v7.3.1)
+  - Downloading pestphp/pest (v2.34.7)
+  - Downloading spatie/backtrace (1.5.3)
+  - Downloading spatie/flare-client-php (1.4.4)
+  - Downloading spatie/ignition (1.13.2)
+  - Downloading spatie/laravel-ignition (2.5.2)
+  - Installing pestphp/pest-plugin (v2.1.1): Extracting archive
+  - Installing psr/http-message (2.0): Extracting archive
+  - Installing symfony/deprecation-contracts (v3.4.0): Extracting archive
+  - Installing psr/http-client (1.0.3): Extracting archive
+  - Installing ralouphie/getallheaders (3.0.3): Extracting archive
+  - Installing psr/http-factory (1.0.2): Extracting archive
+  - Installing guzzlehttp/psr7 (2.6.2): Extracting archive
+  - Installing guzzlehttp/promises (2.0.2): Extracting archive
+  - Installing guzzlehttp/guzzle (7.8.1): Extracting archive
+  - Installing microsoft/microsoft-graph (1.110.0): Extracting archive
+  - Installing league/mime-type-detection (1.15.0): Extracting archive
+  - Installing league/flysystem (3.27.0): Extracting archive
+  - Installing league/flysystem-local (3.25.1): Extracting archive
+  - Installing shitware-ltd/flysystem-msgraph (1.2.0): Extracting archive
+  - Installing league/oauth2-client (2.8.0): Extracting archive
+  - Installing voku/portable-ascii (2.0.1): Extracting archive
+  - Installing symfony/polyfill-php80 (v1.29.0): Extracting archive
+  - Installing symfony/polyfill-mbstring (v1.29.0): Extracting archive
+  - Installing symfony/polyfill-ctype (v1.29.0): Extracting archive
+  - Installing phpoption/phpoption (1.9.2): Extracting archive
+  - Installing graham-campbell/result-type (v1.1.2): Extracting archive
+  - Installing vlucas/phpdotenv (v5.6.0): Extracting archive
+  - Installing symfony/css-selector (v6.4.3): Extracting archive
+  - Installing tijsverkoyen/css-to-inline-styles (v2.2.7): Extracting archive
+  - Installing symfony/var-dumper (v6.4.6): Extracting archive
+  - Installing symfony/polyfill-uuid (v1.29.0): Extracting archive
+  - Installing symfony/uid (v6.4.3): Extracting archive
+  - Installing symfony/routing (v6.4.6): Extracting archive
+  - Installing symfony/process (v6.4.4): Extracting archive
+  - Installing symfony/polyfill-php72 (v1.29.0): Extracting archive
+  - Installing symfony/polyfill-intl-normalizer (v1.29.0): Extracting archive
+  - Installing symfony/polyfill-intl-idn (v1.29.0): Extracting archive
+  - Installing symfony/mime (v6.4.6): Extracting archive
+  - Installing psr/container (2.0.2): Extracting archive
+  - Installing symfony/service-contracts (v3.4.2): Extracting archive
+  - Installing psr/event-dispatcher (1.0.0): Extracting archive
+  - Installing symfony/event-dispatcher-contracts (v3.4.2): Extracting archive
+  - Installing symfony/event-dispatcher (v6.4.3): Extracting archive
+  - Installing psr/log (3.0.0): Extracting archive
+  - Installing doctrine/lexer (3.0.1): Extracting archive
+  - Installing egulias/email-validator (4.0.2): Extracting archive
+  - Installing symfony/mailer (v6.4.6): Extracting archive
+  - Installing symfony/polyfill-php83 (v1.29.0): Extracting archive
+  - Installing symfony/http-foundation (v6.4.4): Extracting archive
+  - Installing symfony/error-handler (v6.4.6): Extracting archive
+  - Installing symfony/http-kernel (v6.4.6): Extracting archive
+  - Installing symfony/finder (v6.4.0): Extracting archive
+  - Installing symfony/polyfill-intl-grapheme (v1.29.0): Extracting archive
+  - Installing symfony/string (v6.4.4): Extracting archive
+  - Installing symfony/console (v6.4.6): Extracting archive
+  - Installing ramsey/collection (2.0.0): Extracting archive
+  - Installing brick/math (0.11.0): Extracting archive
+  - Installing ramsey/uuid (4.7.5): Extracting archive
+  - Installing psr/simple-cache (3.0.0): Extracting archive
+  - Installing nunomaduro/termwind (v1.15.1): Extracting archive
+  - Installing symfony/translation-contracts (v3.4.2): Extracting archive
+  - Installing symfony/translation (v6.4.4): Extracting archive
+  - Installing psr/clock (1.0.0): Extracting archive
+  - Installing carbonphp/carbon-doctrine-types (2.1.0): Extracting archive
+  - Installing nesbot/carbon (2.72.3): Extracting archive
+  - Installing monolog/monolog (3.6.0): Extracting archive
+  - Installing nette/utils (v4.0.4): Extracting archive
+  - Installing nette/schema (v1.3.0): Extracting archive
+  - Installing dflydev/dot-access-data (v3.0.2): Extracting archive
+  - Installing league/config (v1.2.0): Extracting archive
+  - Installing league/commonmark (2.4.2): Extracting archive
+  - Installing laravel/serializable-closure (v1.3.3): Extracting archive
+  - Installing laravel/framework (v10.48.9): Extracting archive
+  - Installing laravel/prompts (v0.1.20): Extracting archive
+  - Installing guzzlehttp/uri-template (v1.0.3): Extracting archive
+  - Installing fruitcake/php-cors (v1.3.0): Extracting archive
+  - Installing webmozart/assert (1.11.0): Extracting archive
+  - Installing dragonmantank/cron-expression (v3.3.3): Extracting archive
+  - Installing doctrine/inflector (2.0.10): Extracting archive
+  - Installing dcblogdev/laravel-microsoft-graph (v4.0.2): Extracting archive
+  - Installing fakerphp/faker (v1.23.1): Extracting archive
+  - Installing fidry/cpu-core-counter (1.1.0): Extracting archive
+  - Installing filp/whoops (2.15.4): Extracting archive
+  - Installing jean85/pretty-package-versions (2.0.6): Extracting archive
+  - Installing laravel/pint (v1.15.2): Extracting archive
+  - Installing symfony/yaml (v6.4.3): Extracting archive
+  - Installing laravel/sail (v1.29.1): Extracting archive
+  - Installing laravel/sanctum (v3.3.3): Extracting archive
+  - Installing nikic/php-parser (v5.0.2): Extracting archive
+  - Installing psy/psysh (v0.12.3): Extracting archive
+  - Installing laravel/tinker (v2.9.0): Extracting archive
+  - Installing laravel/ui (v4.5.1): Extracting archive
+  - Installing markbaker/matrix (3.0.1): Extracting archive
+  - Installing markbaker/complex (3.0.2): Extracting archive
+  - Installing maennchen/zipstream-php (3.1.1): Extracting archive
+  - Installing ezyang/htmlpurifier (v4.18.0): Extracting archive
+  - Installing phpoffice/phpspreadsheet (1.29.6): Extracting archive
+  - Installing composer/semver (3.4.3): Extracting archive
+  - Installing maatwebsite/excel (3.1.61): Extracting archive
+  - Installing hamcrest/hamcrest-php (v2.0.1): Extracting archive
+  - Installing mockery/mockery (1.6.11): Extracting archive
+  - Installing myclabs/deep-copy (1.11.1): Extracting archive
+  - Installing sebastian/version (4.0.1): Extracting archive
+  - Installing sebastian/type (4.0.0): Extracting archive
+  - Installing sebastian/recursion-context (5.0.0): Extracting archive
+  - Installing sebastian/object-reflector (3.0.0): Extracting archive
+  - Installing sebastian/object-enumerator (5.0.0): Extracting archive
+  - Installing sebastian/global-state (6.0.2): Extracting archive
+  - Installing sebastian/exporter (5.1.2): Extracting archive
+  - Installing sebastian/environment (6.1.0): Extracting archive
+  - Installing sebastian/diff (5.1.1): Extracting archive
+  - Installing sebastian/comparator (5.0.1): Extracting archive
+  - Installing sebastian/code-unit (2.0.0): Extracting archive
+  - Installing sebastian/cli-parser (2.0.1): Extracting archive
+  - Installing phpunit/php-timer (6.0.0): Extracting archive
+  - Installing phpunit/php-text-template (3.0.1): Extracting archive
+  - Installing phpunit/php-invoker (4.0.0): Extracting archive
+  - Installing phpunit/php-file-iterator (4.1.0): Extracting archive
+  - Installing theseer/tokenizer (1.2.3): Extracting archive
+  - Installing sebastian/lines-of-code (2.0.2): Extracting archive
+  - Installing sebastian/complexity (3.2.0): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (3.0.0): Extracting archive
+  - Installing phpunit/php-code-coverage (10.1.14): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/manifest (2.0.4): Extracting archive
+  - Installing phpunit/phpunit (10.5.17): Extracting archive
+  - Installing phpstan/phpdoc-parser (1.28.0): Extracting archive
+  - Installing phpdocumentor/reflection-common (2.2.0): Extracting archive
+  - Installing doctrine/deprecations (1.1.3): Extracting archive
+  - Installing phpdocumentor/type-resolver (1.8.2): Extracting archive
+  - Installing phpdocumentor/reflection-docblock (5.4.0): Extracting archive
+  - Installing ta-tikoma/phpunit-architecture-test (0.8.4): Extracting archive
+  - Installing nunomaduro/collision (v7.10.0): Extracting archive
+  - Installing pestphp/pest-plugin-arch (v2.7.0): Extracting archive
+  - Installing brianium/paratest (v7.3.1): Extracting archive
+  - Installing pestphp/pest (v2.34.7): Extracting archive
+  - Installing realrashid/sweet-alert (v7.1.1): Extracting archive
+  - Installing spatie/backtrace (1.5.3): Extracting archive
+  - Installing spatie/flare-client-php (1.4.4): Extracting archive
+  - Installing spatie/ignition (1.13.2): Extracting archive
+  - Installing spatie/laravel-ignition (2.5.2): Extracting archive
+  - Installing yajra/laravel-datatables-oracle (v10.11.4): Extracting archive
+ 135/136 [===========================>]  99%
