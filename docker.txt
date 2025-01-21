@@ -1,9 +1,2 @@
-The description for Event ID 0 from source WSL cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.
-
-If the event originated on another computer, the display information had to be saved with the event.
-
-The following information was included with the event: 
-
-Unknown key 'wsl2.systemd' in C:\Users\rgbdeveloper01\.wslconfig:2
-
-The message resource is present but the message was not found in the message table
+C:\Users\rgbdeveloper01>wsl
+wsl: Expected '=' in C:\Users\rgbdeveloper01\.wslconfig:1
