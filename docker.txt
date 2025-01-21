@@ -1,9 +1,1 @@
-
-C:\Users\rgbdeveloper01>netstat -an | find "8080"
-  TCP    127.0.0.1:8080         0.0.0.0:0              LISTENING
-  TCP    [::1]:8080             [::]:0                 LISTENING
-  TCP    [::1]:8080             [::1]:56550            TIME_WAIT
-  TCP    [::1]:8080             [::1]:56557            ESTABLISHED
-  TCP    [::1]:8080             [::1]:56558            FIN_WAIT_2
-  TCP    [::1]:56557            [::1]:8080             ESTABLISHED
-  TCP    [::1]:56558            [::1]:8080             CLOSE_WAIT
+C:\Users\rgbdeveloper01\Documents\RGB-Deployment\rgbapplication
