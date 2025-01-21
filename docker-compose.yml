@@ -9,11 +9,11 @@ services:
     container_name: rgb_nginx
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - laravel_app_data:/var/www/html
+      - ./:/var/www/html:cached # Mount the local project directory
     ports:
       - 80:80
     depends_on:
-      - app # Changed from scalar to list
+      - app
     networks:
       - rgb_network
 
@@ -24,7 +24,7 @@ services:
     restart: always
     working_dir: /var/www/html
     volumes:
-      - laravel_app_data:/var/www/html
+      - ./:/var/www/html:cached # Mount the local project directory
     ports:
       - 9000:9000
     environment:
@@ -41,4 +41,4 @@ services:
       - rgb_network
 
 volumes:
-  laravel_app_data: # Volume for Laravel application data
+  laravel_app_data:
