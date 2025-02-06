@@ -1,10 +1,17 @@
-PS C:\Windows\system32> Test-NetConnection -ComputerName 172.23.79.6 -Port 80                                                                                                                                                                                                                                                                                           ComputerName     : 172.23.79.6
-RemoteAddress    : 172.23.79.6
-RemotePort       : 80
-InterfaceAlias   : vEthernet (WSL)
-SourceAddress    : 172.23.64.1
-TcpTestSucceeded : True
 
+C:\Windows\system32>netsh advfirewall firewall show rule name="Allow HTTP"
 
-
-PS C:\Windows\system32>
+Rule Name:                            Allow HTTP
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            80
+RemotePort:                           Any
+Edge traversal:                       No
+Action:                               Allow
+Ok.
