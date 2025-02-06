@@ -1,5 +1,10 @@
-C:\Windows\system32>Test-NetConnection -ComputerName 172.23.79.6 -Port 80
-'Test-NetConnection' is not recognized as an internal or external command,
-operable program or batch file.
+PS C:\Windows\system32> Test-NetConnection -ComputerName 172.23.79.6 -Port 80                                                                                                                                                                                                                                                                                           ComputerName     : 172.23.79.6
+RemoteAddress    : 172.23.79.6
+RemotePort       : 80
+InterfaceAlias   : vEthernet (WSL)
+SourceAddress    : 172.23.64.1
+TcpTestSucceeded : True
 
-C:\Windows\system32>
+
+
+PS C:\Windows\system32>
