@@ -29,7 +29,7 @@ services:
       - 9000:9000
     environment:
       APP_ENV: local
-      APP_DEBUG: true
+      APP_DEBUG: false
       DB_CONNECTION: sqlsrv
       DB_HOST: 172.16.66.60
       DB_PORT: 1433
