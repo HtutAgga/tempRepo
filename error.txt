@@ -1,10 +1,5 @@
-C:\Windows\system32>netsh interface portproxy add v4tov4 listenaddress=172.16.66.69 listenport=80 connectaddress=172.23.79.6 connectport=80
+C:\Windows\system32>Test-NetConnection -ComputerName 172.23.79.6 -Port 80
+'Test-NetConnection' is not recognized as an internal or external command,
+operable program or batch file.
 
-
-C:\Windows\system32>netsh interface portproxy show v4tov4
-
-Listen on ipv4:             Connect to ipv4:
-
-Address         Port        Address         Port
---------------- ----------  --------------- ----------
-172.16.66.69    80          172.23.79.6     80
+C:\Windows\system32>
