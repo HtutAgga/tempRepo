@@ -1,4 +1,10 @@
-ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01$ sudo netstat -tulnp | grep :80
-[sudo] password for ubuntu:
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      676/docker-proxy
-tcp6       0      0 :::80                   :::*                    LISTEN      683/docker-proxy
+C:\Windows\system32>netsh interface portproxy add v4tov4 listenaddress=172.16.66.69 listenport=80 connectaddress=172.23.79.6 connectport=80
+
+
+C:\Windows\system32>netsh interface portproxy show v4tov4
+
+Listen on ipv4:             Connect to ipv4:
+
+Address         Port        Address         Port
+--------------- ----------  --------------- ----------
+172.16.66.69    80          172.23.79.6     80
