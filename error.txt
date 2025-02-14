@@ -1,17 +1,19 @@
+C:\Windows\system32>netstat -ano | findstr :1433
+  TCP    172.16.66.69:54632     172.16.66.60:1433      TIME_WAIT       0
+  TCP    172.16.66.69:54633     172.16.66.60:1433      TIME_WAIT       0
+  TCP    172.16.66.69:54639     172.16.66.60:1433      TIME_WAIT       0
+  TCP    172.16.66.69:54640     172.16.66.60:1433      TIME_WAIT       0
+  TCP    172.16.66.69:54641     172.16.66.60:1433      TIME_WAIT       0
+  TCP    172.16.66.69:54642     172.16.66.60:1433      TIME_WAIT       0
+  TCP    172.16.66.69:54648     172.16.66.60:1433      TIME_WAIT       0
+  TCP    172.16.66.69:54650     172.16.66.60:1433      TIME_WAIT       0
+  TCP    172.16.66.69:54653     172.16.66.60:1433      TIME_WAIT       0
 
-C:\Windows\system32>netsh advfirewall firewall show rule name="Allow HTTP"
 
-Rule Name:                            Allow HTTP
-----------------------------------------------------------------------
-Enabled:                              Yes
-Direction:                            In
-Profiles:                             Domain,Private,Public
-Grouping:
-LocalIP:                              Any
-RemoteIP:                             Any
-Protocol:                             TCP
-LocalPort:                            80
-RemotePort:                           Any
-Edge traversal:                       No
-Action:                               Allow
-Ok.
+DB_CONNECTION=sqlsrv
+DB_HOST=172.16.66.60
+DB_PORT=1433
+DB_DATABASE=RGB_Bottle_Collect
+DB_USERNAME=sa
+DB_PASSWORD=sa@123QWEasz
+DB_TRUST_CERTIFICATE=true
