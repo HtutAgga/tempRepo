@@ -1,19 +1,6 @@
-C:\Windows\system32>netstat -ano | findstr :1433
-  TCP    172.16.66.69:54632     172.16.66.60:1433      TIME_WAIT       0
-  TCP    172.16.66.69:54633     172.16.66.60:1433      TIME_WAIT       0
-  TCP    172.16.66.69:54639     172.16.66.60:1433      TIME_WAIT       0
-  TCP    172.16.66.69:54640     172.16.66.60:1433      TIME_WAIT       0
-  TCP    172.16.66.69:54641     172.16.66.60:1433      TIME_WAIT       0
-  TCP    172.16.66.69:54642     172.16.66.60:1433      TIME_WAIT       0
-  TCP    172.16.66.69:54648     172.16.66.60:1433      TIME_WAIT       0
-  TCP    172.16.66.69:54650     172.16.66.60:1433      TIME_WAIT       0
-  TCP    172.16.66.69:54653     172.16.66.60:1433      TIME_WAIT       0
-
-
-DB_CONNECTION=sqlsrv
-DB_HOST=172.16.66.60
-DB_PORT=1433
-DB_DATABASE=RGB_Bottle_Collect
-DB_USERNAME=sa
-DB_PASSWORD=sa@123QWEasz
-DB_TRUST_CERTIFICATE=true
+                                                                                                                        PS C:\Windows\system32> Test-NetConnection -ComputerName 172.16.66.60 -Port 1433                                                                                                                                                                                                                                                                                        ComputerName     : 172.16.66.60
+RemoteAddress    : 172.16.66.60
+RemotePort       : 1433
+InterfaceAlias   : Ethernet0
+SourceAddress    : 172.16.66.69
+TcpTestSucceeded : True
