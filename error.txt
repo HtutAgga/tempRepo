@@ -1,6 +1,16 @@
-ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo docker network inspect bri
-dge
-[sudo] password for ubuntu:
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo docker exec -it rgb_app /bin/bash
+root@c7ac887cb8e3:/var/www/html# ping 172.16.66.60
+bash: ping: command not found
+root@c7ac887cb8e3:/var/www/html# exit
+exit
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ docker network create \
+>   --driver bridge \
+>   --subnet=172.16.66.0/24 \
+>   rgb_network
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/networks/create": dial unix /var/run/docker.sock: connect: permission denied
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo docker network create   --driver bridge   --subnet=172.16.66.0/24   rgb_network
+\0f958059c66be2b3f2db5cf733a7aa21edbd86ffb3fc5b5e4cb85ee1d5015a63
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo docker network inspect bridge
 [
     {
         "Name": "bridge",
@@ -38,3 +48,12 @@ dge
         "Labels": {}
     }
 ]
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo docker ps
+CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+7aecb9b73264   nginx:alpine         "/docker-entrypoint.…"   30 minutes ago   Up 30 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp           rgb_nginx
+c7ac887cb8e3   rgbapplication-app   "docker-php-entrypoi…"   30 minutes ago   Up 30 minutes   0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   rgb_app
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo docker ps -a
+CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+7aecb9b73264   nginx:alpine         "/docker-entrypoint.…"   31 minutes ago   Up 31 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp           rgb_nginx
+c7ac887cb8e3   rgbapplication-app   "docker-php-entrypoi…"   31 minutes ago   Up 31 minutes   0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   rgb_app
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$
