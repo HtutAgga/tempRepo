@@ -1,6 +1,5 @@
-                                                                                                                        PS C:\Windows\system32> Test-NetConnection -ComputerName 172.16.66.60 -Port 1433                                                                                                                                                                                                                                                                                        ComputerName     : 172.16.66.60
-RemoteAddress    : 172.16.66.60
-RemotePort       : 1433
-InterfaceAlias   : Ethernet0
-SourceAddress    : 172.16.66.69
-TcpTestSucceeded : True
+PS C:\Windows\system32> netstat -ano | findstr :1433
+  TCP    172.16.66.69:52679     172.16.66.60:1433      ESTABLISHED     29172
+  TCP    172.16.66.69:52681     172.16.66.60:1433      ESTABLISHED     29172
+  TCP    172.16.66.69:52688     172.16.66.60:1433      ESTABLISHED     29172
+  TCP    172.16.66.69:52691     172.16.66.60:1433      ESTABLISHED     29172
