@@ -1,5 +1,40 @@
-PS C:\Windows\system32> netstat -ano | findstr :1433
-  TCP    172.16.66.69:52679     172.16.66.60:1433      ESTABLISHED     29172
-  TCP    172.16.66.69:52681     172.16.66.60:1433      ESTABLISHED     29172
-  TCP    172.16.66.69:52688     172.16.66.60:1433      ESTABLISHED     29172
-  TCP    172.16.66.69:52691     172.16.66.60:1433      ESTABLISHED     29172
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo docker network inspect bri
+dge
+[sudo] password for ubuntu:
+[
+    {
+        "Name": "bridge",
+        "Id": "3a4fe0cee1a965749b8082879304ef27cbabbc8bc71c217837658bff837a6fe7",
+        "Created": "2025-02-14T11:30:56.2390531+06:30",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {},
+        "Options": {
+            "com.docker.network.bridge.default_bridge": "true",
+            "com.docker.network.bridge.enable_icc": "true",
+            "com.docker.network.bridge.enable_ip_masquerade": "true",
+            "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+            "com.docker.network.bridge.name": "docker0",
+            "com.docker.network.driver.mtu": "1500"
+        },
+        "Labels": {}
+    }
+]
