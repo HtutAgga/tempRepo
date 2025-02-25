@@ -1,13 +1,11 @@
-PS C:\Windows\system32> curl -I http://localhost
-
-cmdlet Invoke-WebRequest at command pipeline position 1
-Supply values for the following parameters:
-Uri: curl -I http://localhost
-curl : Cannot find drive. A drive with the name 'http' does not exist.
-At line:1 char:1
-+ curl -I http://localhost
-+ ~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (http:String) [Invoke-WebRequest], DriveNotFoundException
-    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
-
-PS C:\Windows\system32>
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo ss -tulpn
+Netid            State             Recv-Q            Send-Q                         Local Address:Port                          Peer Address:Port            Process
+udp              UNCONN            0                 0                              127.0.0.53%lo:53                                 0.0.0.0:*                users:(("systemd-resolve",pid=202,fd=13))
+udp              UNCONN            0                 0                                  127.0.0.1:323                                0.0.0.0:*
+udp              UNCONN            0                 0                                      [::1]:323                                   [::]:*
+tcp              LISTEN            0                 4096                                 0.0.0.0:80                                 0.0.0.0:*                users:(("docker-proxy",pid=1703,fd=4))
+tcp              LISTEN            0                 4096                                 0.0.0.0:9000                               0.0.0.0:*                users:(("docker-proxy",pid=1614,fd=4))
+tcp              LISTEN            0                 4096                               127.0.0.1:42043                              0.0.0.0:*                users:(("containerd",pid=275,fd=10))
+tcp              LISTEN            0                 4096                           127.0.0.53%lo:53                                 0.0.0.0:*                users:(("systemd-resolve",pid=202,fd=14))
+tcp              LISTEN            0                 4096                                    [::]:80                                    [::]:*                users:(("docker-proxy",pid=1710,fd=4))
+tcp              LISTEN            0                 4096                                    [::]:9000                                  [::]:*                users:(("docker-proxy",pid=1621,fd=4))
