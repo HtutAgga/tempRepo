@@ -1,44 +1,66 @@
-networks:
-  rgb_network:
-    driver: bridge
+user nginx;
+worker_processes auto;
+pid /var/run/nginx.pid;
 
-services:
-  nginx:
-    image: nginx:alpine
-    restart: always
-    container_name: rgb_nginx
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./:/var/www/html:cached # Mount the local project directory
-    ports:
-      - 80:80
-    depends_on:
-      - app
-    networks:
-      - rgb_network
+events {
+    worker_connections 4096;
+}
 
-  app:
-    build:
-      context: .
-    container_name: rgb_app
-    restart: always
-    working_dir: /var/www/html
-    volumes:
-      - ./:/var/www/html:cached # Mount the local project directory
-    ports:
-      - 9000:9000
-    environment:
-      APP_ENV: local
-      APP_DEBUG: false
-      DB_CONNECTION: sqlsrv
-      DB_HOST: 172.16.66.60
-      DB_PORT: 1433
-      DB_DATABASE: RGB_Bottle_Collect
-      DB_USERNAME: sa
-      DB_PASSWORD: sa@123QWEasz
-      DB_TRUST_CERTIFICATE: true
-    networks:
-      - rgb_network
+http {
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
 
-volumes:
-  laravel_app_data:
+    # Logging
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log;
+
+    # Gzip Compression
+    gzip on;
+    gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+    gzip_min_length 256;
+
+    server {
+        listen 0.0.0.0:80; # Or listen 172.16.66.69:80;
+        server_name 172.16.66.69;
+
+        root /var/www/html/public;
+        index index.php index.html;
+
+        # Serve static assets with caching
+        location ~* \.(ico|css|js|gif|jpe?g|png|woff2?|eot|ttf|svg)$ {
+            expires 6M;
+            access_log off;
+            add_header Cache-Control "public";
+        }
+
+        # Serve static assets under /assets/
+        location /assets/ {
+            root /var/www/html/public;
+            try_files $uri $uri/ =404;
+        }
+
+        # Handle Laravel routes
+        location / {
+            try_files $uri $uri/ /index.php?$query_string;
+        }
+
+        # PHP-FPM configuration
+        location ~ \.php$ {
+            include /etc/nginx/fastcgi_params;
+            fastcgi_pass app:9000;
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        }
+
+        # Deny access to sensitive files
+        location ~* \.(env|git|svn|htaccess|htpasswd|log|sh)$ {
+            deny all;
+        }
+
+        # Error pages
+        error_page 404 /404.html;
+        location = /404.html { }
+
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html { }
+    }
+}
