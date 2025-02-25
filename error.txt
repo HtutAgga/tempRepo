@@ -1,4 +1,1 @@
-ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo docker ps
-CONTAINER ID   IMAGE                COMMAND                  CREATED         STATUS         PORTS                                       NAMES
-9a8c43ea13cf   nginx:alpine         "/docker-entrypoint.…"   8 minutes ago   Up 8 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp       rgb_nginx
-76c2c61a712b   rgbapplication-app   "docker-php-entrypoi…"   8 minutes ago   Up 8 minutes   0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   rgb_app
+{"rgbapplication_rgb_network":{"IPAMConfig":null,"Links":null,"Aliases":["rgb_nginx","nginx","9a8c43ea13cf"],"NetworkID":"8d2256c762dd476dfb10742fa36d5a9b6436613590e2e94b6aadd45f07155c1c","EndpointID":"02c4d8205fac1fb802fcaa9c65379d1aef2993f56717a70adf2d8fd54a18786d","Gateway":"172.19.0.1","IPAddress":"172.19.0.3","IPPrefixLen":16,"IPv6Gateway":"","GlobalIPv6Address":"","GlobalIPv6PrefixLen":0,"MacAddress":"02:42:ac:13:00:03","DriverOpts":null}}
