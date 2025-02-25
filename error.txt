@@ -1,11 +1,17 @@
-ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ curl -I http://localhost:8080
-^C
-ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ ip addr show eth0
-2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
-    link/ether 00:50:56:b2:fa:84 brd ff:ff:ff:ff:ff:ff
-    altname enP12776s211355596
-    altname enP12776p0s0
-    inet 172.16.66.69/24 brd 172.16.66.255 scope global eth0
-       valid_lft forever preferred_lft forever
-    inet6 fe80::250:56ff:feb2:fa84/64 scope link
-       valid_lft forever preferred_lft forever
+PS C:\Windows\system32> netstat -an | findstr :8080
+  TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:8080         0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:8080         127.0.0.1:49181        CLOSE_WAIT
+  TCP    127.0.0.1:8080         127.0.0.1:65524        CLOSE_WAIT
+  TCP    127.0.0.1:8080         127.0.0.1:65525        ESTABLISHED
+  TCP    127.0.0.1:8080         127.0.0.1:65527        ESTABLISHED
+  TCP    127.0.0.1:49181        127.0.0.1:8080         FIN_WAIT_2
+  TCP    127.0.0.1:65524        127.0.0.1:8080         FIN_WAIT_2
+  TCP    127.0.0.1:65525        127.0.0.1:8080         ESTABLISHED
+  TCP    127.0.0.1:65527        127.0.0.1:8080         ESTABLISHED
+  TCP    172.16.66.69:8080      172.16.66.69:49152     ESTABLISHED
+  TCP    172.16.66.69:8080      172.16.66.69:65529     CLOSE_WAIT
+  TCP    172.16.66.69:8080      172.16.66.69:65530     ESTABLISHED
+  TCP    172.16.66.69:49152     172.16.66.69:8080      ESTABLISHED
+  TCP    172.16.66.69:65529     172.16.66.69:8080      FIN_WAIT_2
+  TCP    172.16.66.69:65530     172.16.66.69:8080      ESTABLISHED
