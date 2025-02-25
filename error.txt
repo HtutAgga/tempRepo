@@ -1,9 +1,11 @@
-ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ ip addr show eth0
-2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
-    link/ether 00:50:56:b2:fa:84 brd ff:ff:ff:ff:ff:ff
-    altname enP12776s211355596
-    altname enP12776p0s0
-    inet 172.16.66.69/24 brd 172.16.66.255 scope global eth0
-       valid_lft forever preferred_lft forever
-    inet6 fe80::250:56ff:feb2:fa84/64 scope link
-       valid_lft forever preferred_lft forever
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo ss -tulpn
+Netid            State             Recv-Q            Send-Q                         Local Address:Port                          Peer Address:Port            Process
+udp              UNCONN            0                 0                              127.0.0.53%lo:53                                 0.0.0.0:*                users:(("systemd-resolve",pid=202,fd=13))
+udp              UNCONN            0                 0                                  127.0.0.1:323                                0.0.0.0:*
+udp              UNCONN            0                 0                                      [::1]:323                                   [::]:*
+tcp              LISTEN            0                 4096                                 0.0.0.0:9000                               0.0.0.0:*                users:(("docker-proxy",pid=2575,fd=4))
+tcp              LISTEN            0                 4096                               127.0.0.1:42043                              0.0.0.0:*                users:(("containerd",pid=275,fd=10))
+tcp              LISTEN            0                 4096                                 0.0.0.0:8080                               0.0.0.0:*                users:(("docker-proxy",pid=2662,fd=4))
+tcp              LISTEN            0                 4096                           127.0.0.53%lo:53                                 0.0.0.0:*                users:(("systemd-resolve",pid=202,fd=14))
+tcp              LISTEN            0                 4096                                    [::]:9000                                  [::]:*                users:(("docker-proxy",pid=2584,fd=4))
+tcp              LISTEN            0                 4096                                    [::]:8080                                  [::]:*                users:(("docker-proxy",pid=2670,fd=4))
