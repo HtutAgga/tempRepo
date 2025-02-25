@@ -1,17 +1,31 @@
-PS C:\Windows\system32> netstat -an | findstr :8080
-  TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:8080         0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:8080         127.0.0.1:49181        CLOSE_WAIT
-  TCP    127.0.0.1:8080         127.0.0.1:65524        CLOSE_WAIT
-  TCP    127.0.0.1:8080         127.0.0.1:65525        ESTABLISHED
-  TCP    127.0.0.1:8080         127.0.0.1:65527        ESTABLISHED
-  TCP    127.0.0.1:49181        127.0.0.1:8080         FIN_WAIT_2
-  TCP    127.0.0.1:65524        127.0.0.1:8080         FIN_WAIT_2
-  TCP    127.0.0.1:65525        127.0.0.1:8080         ESTABLISHED
-  TCP    127.0.0.1:65527        127.0.0.1:8080         ESTABLISHED
-  TCP    172.16.66.69:8080      172.16.66.69:49152     ESTABLISHED
-  TCP    172.16.66.69:8080      172.16.66.69:65529     CLOSE_WAIT
-  TCP    172.16.66.69:8080      172.16.66.69:65530     ESTABLISHED
-  TCP    172.16.66.69:49152     172.16.66.69:8080      ESTABLISHED
-  TCP    172.16.66.69:65529     172.16.66.69:8080      FIN_WAIT_2
-  TCP    172.16.66.69:65530     172.16.66.69:8080      ESTABLISHED
+ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo docker network inspect rgb_network
+[
+    {
+        "Name": "rgb_network",
+        "Id": "0f958059c66be2b3f2db5cf733a7aa21edbd86ffb3fc5b5e4cb85ee1d5015a63",
+        "Created": "2025-02-17T13:38:58.219914452+06:30",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.16.66.0/24",
+                    "Gateway": "172.16.66.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {},
+        "Options": {},
+        "Labels": {}
+    }
+]
