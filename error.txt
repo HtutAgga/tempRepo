@@ -1,21 +1,13 @@
-S C:\Windows\system32> netstat -an | findstr :80
-  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:80           0.0.0.0:0              LISTENING
-  TCP    127.0.0.1:80           127.0.0.1:64854        CLOSE_WAIT
-  TCP    127.0.0.1:80           127.0.0.1:64855        CLOSE_WAIT
-  TCP    127.0.0.1:80           127.0.0.1:64861        CLOSE_WAIT
-  TCP    127.0.0.1:80           127.0.0.1:64919        ESTABLISHED
-  TCP    127.0.0.1:80           127.0.0.1:64920        CLOSE_WAIT
-  TCP    127.0.0.1:80           127.0.0.1:64921        CLOSE_WAIT
-  TCP    127.0.0.1:64854        127.0.0.1:80           FIN_WAIT_2
-  TCP    127.0.0.1:64855        127.0.0.1:80           FIN_WAIT_2
-  TCP    127.0.0.1:64861        127.0.0.1:80           FIN_WAIT_2
-  TCP    127.0.0.1:64919        127.0.0.1:80           ESTABLISHED
-  TCP    127.0.0.1:64920        127.0.0.1:80           FIN_WAIT_2
-  TCP    127.0.0.1:64921        127.0.0.1:80           FIN_WAIT_2
-  TCP    172.16.66.69:80        172.16.66.69:64847     ESTABLISHED
-  TCP    172.16.66.69:80        172.16.66.69:64848     CLOSE_WAIT
-  TCP    172.16.66.69:64847     172.16.66.69:80        ESTABLISHED
-  TCP    172.16.66.69:64848     172.16.66.69:80        FIN_WAIT_2
-  TCP    172.16.66.69:65160     192.168.150.20:8027    ESTABLISHED
+PS C:\Windows\system32> curl -I http://localhost
+
+cmdlet Invoke-WebRequest at command pipeline position 1
+Supply values for the following parameters:
+Uri: curl -I http://localhost
+curl : Cannot find drive. A drive with the name 'http' does not exist.
+At line:1 char:1
++ curl -I http://localhost
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (http:String) [Invoke-WebRequest], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+
 PS C:\Windows\system32>
