@@ -1,8 +1,8 @@
-172.16.66.69
-root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01# ip a | grep "inet "
-    inet 127.0.0.1/8 scope host lo
-    inet 172.16.66.69/24 brd 172.16.66.255 scope global eth0
-    inet 169.254.73.153/30 brd 169.254.73.155 scope global loopback0
-    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
-    inet 172.19.0.1/16 brd 172.19.255.255 scope global br-91718d61a912
+root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01# netstat -tulpn | grep LISTEN
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      190/systemd-resolve
+tcp        0      0 127.0.0.1:35323         0.0.0.0:*               LISTEN      273/containerd
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      670/docker-proxy
+tcp        0      0 0.0.0.0:9000            0.0.0.0:*               LISTEN      693/docker-proxy
+tcp6       0      0 :::80                   :::*                    LISTEN      678/docker-proxy
+tcp6       0      0 :::9000                 :::*                    LISTEN      700/docker-proxy
 root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01#
