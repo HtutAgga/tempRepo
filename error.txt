@@ -1,5 +1,9 @@
-PS C:\Windows\system32> wmic process where processid=6568 get CommandLine
-CommandLine
-C:\Windows\system32\DllHost.exe /Processid:{17696EAC-9568-4CF5-BB8C-82515AAD6C09}
+PS C:\Windows\system32> Get-ItemProperty HKCR:\CLSID\{17696EAC-9568-4CF5-BB8C-82515AAD6C09}
+Get-ItemProperty : Cannot find drive. A drive with the name 'HKCR' does not exist.
+At line:1 char:1
++ Get-ItemProperty HKCR:\CLSID\{17696EAC-9568-4CF5-BB8C-82515AAD6C09}
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKCR:String) [Get-ItemProperty], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetItemPropertyCommand
 
 PS C:\Windows\system32>
