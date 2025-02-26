@@ -1,6 +1,16 @@
-PS C:\Windows\system32> netstat -ano | findstr :8080
-  TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       6568
-  TCP    127.0.0.1:8080         0.0.0.0:0              LISTENING       6568
+PS C:\Windows\system32> netstat -ano | findstr :8081
+  TCP    0.0.0.0:8081           0.0.0.0:0              LISTENING       6568
+  TCP    127.0.0.1:8081         0.0.0.0:0              LISTENING       6568
+  TCP    127.0.0.1:8081         127.0.0.1:49589        ESTABLISHED     6568
+  TCP    127.0.0.1:8081         127.0.0.1:49590        ESTABLISHED     6568
+  TCP    127.0.0.1:8081         127.0.0.1:49592        ESTABLISHED     6568
+  TCP    127.0.0.1:49589        127.0.0.1:8081         ESTABLISHED     1452
+  TCP    127.0.0.1:49590        127.0.0.1:8081         ESTABLISHED     1452
+  TCP    127.0.0.1:49592        127.0.0.1:8081         ESTABLISHED     1452
+  TCP    172.16.66.69:8081      172.16.66.69:49579     ESTABLISHED     6568
+  TCP    172.16.66.69:8081      172.16.66.69:49580     ESTABLISHED     6568
+  TCP    172.16.66.69:49579     172.16.66.69:8081      ESTABLISHED     1452
+  TCP    172.16.66.69:49580     172.16.66.69:8081      ESTABLISHED     1452
 PS C:\Windows\system32> tasklist | findstr 6568
-dllhost.exe                   6568 RDP-Tcp#0                  3     17,148 K
+dllhost.exe                   6568 RDP-Tcp#0                  3     17,320 K
 PS C:\Windows\system32>
