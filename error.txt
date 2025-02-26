@@ -1,8 +1,12 @@
-root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01# netstat -tulpn | grep LISTEN
-tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      190/systemd-resolve
-tcp        0      0 127.0.0.1:35323         0.0.0.0:*               LISTEN      273/containerd
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      670/docker-proxy
-tcp        0      0 0.0.0.0:9000            0.0.0.0:*               LISTEN      693/docker-proxy
-tcp6       0      0 :::80                   :::*                    LISTEN      678/docker-proxy
-tcp6       0      0 :::9000                 :::*                    LISTEN      700/docker-proxy
+root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01# docker exec -it rgb_nginx curl -I http://localhost
+HTTP/1.1 302 Found
+Server: nginx/1.27.4
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+X-Powered-By: PHP/8.2.27
+Cache-Control: no-cache, private
+Date: Wed, 26 Feb 2025 07:10:41 GMT
+Location: http://localhost/login
+Set-Cookie: laravel_session=eyJpdiI6IkJTTTZvTDJ4UENLWU9ObzU4UkJIcUE9PSIsInZhbHVlIjoiMCtiS05TOE5ROVpQTDduTlcwNjAzaElTckdZYmZmaUFGeWRrczlmSk5PR3l6VHAwbjkxUDNmdmhPRFB4VXRCUkNqTU1lMnhRazcxeVRHWTNHdEl1aGlLa0pDWDlBUWxETko3MnR2WERLR2pnKzcwY2tJWkpIeWJkMENYUFJMa3QiLCJtYWMiOiIwZTUzYTZhMjNhOTc1ZTgyNTQ5YTNmYmFlMjQ0YTAyNzYyMjhlYTU2OTViNzU0MjVkZjhjYTdjNDFhODBjNDliIiwidGFnIjoiIn0%3D; expires=Wed, 26 Feb 2025 09:10:41 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+
 root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01#
