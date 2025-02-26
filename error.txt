@@ -1,84 +1,153 @@
-root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01# curl -I http://172.16.66.69
-HTTP/1.1 302 Found
-Server: nginx/1.27.4
-Content-Type: text/html; charset=UTF-8
-Connection: keep-alive
-X-Powered-By: PHP/8.2.27
-Cache-Control: no-cache, private
-Date: Wed, 26 Feb 2025 07:12:03 GMT
-Location: http://172.16.66.69/login
-Set-Cookie: laravel_session=eyJpdiI6Im50WE9GQnAyaFR0dkQ2bkE1eEZ1Qnc9PSIsInZhbHVlIjoiUTRLKzVvOVJLUGpScDA2eXVaZTZiWk9ZL2E5NkFhQ3kvQkU0YSs0NU4rdURBby8yZWczSmVyZnV0U0dsdklFdm1nOGNicXoyMDZyWDBFNFlyUHcvVDVqaXBUUXpCcTNMVTVvaFNwYUVLVTlkbUJiWWdVYm43Vk9aNTdPMjdXMkgiLCJtYWMiOiIzMWRhN2Y5MTcwYTk1ZjQ2ZTg1MzFkYjhjMjRjMjlmNjQ2OWMxODYwZmY2NjZkZjY4NjM2NzVlODMyYWU4MTQ2IiwidGFnIjoiIn0%3D; expires=Wed, 26 Feb 2025 09:12:03 GMT; Max-Age=7200; path=/; httponly; samesite=lax
-
-root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01# curl -I http://localhost
-
-curl -I http://localhost is not respone and 
-
-this is my nginx.conf
+PS C:\Windows\system32> Get-NetFirewallRule | Where-Object { $_.DisplayName -like "*Docker*" }
 
 
-user nginx;
-worker_processes auto;
-pid /var/run/nginx.pid;
+Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                848ACD19-54FB-4C1D-9024-5ADB71550807 - 0
+DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                848ACD19-54FB-4C1D-9024-5ADB71550807 - 0
+Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                848ACD19-54FB-4C1D-9024-5ADB71550807 - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
 
-events {
-    worker_connections 4096;
-}
+Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                EB3338FE-F3E4-449F-980F-8144D078A9C1 - 0
+DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                EB3338FE-F3E4-449F-980F-8144D078A9C1 - 0
+Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                EB3338FE-F3E4-449F-980F-8144D078A9C1 - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
 
-http {
-    include /etc/nginx/mime.types;
-    default_type application/octet-stream;
+Name                          : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+DisplayName                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+Description                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
 
-    # Logging
-    access_log /var/log/nginx/access.log;
-    error_log /var/log/nginx/error.log;
+Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
 
-    # Gzip Compression
-    gzip on;
-    gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
-    gzip_min_length 256;
+Name                          : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+DisplayName                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+Description                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
 
-    server {
-        listen 0.0.0.0:80 default_server;
-    	server_name localhost 172.16.66.69;
+Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
 
-        root /var/www/html/public;
-        index index.php index.html;
-
-        # Serve static assets with caching
-        location ~* \.(ico|css|js|gif|jpe?g|png|woff2?|eot|ttf|svg)$ {
-            expires 6M;
-            access_log off;
-            add_header Cache-Control "public";
-        }
-
-        # Serve static assets under /assets/
-        location /assets/ {
-            root /var/www/html/public;
-            try_files $uri $uri/ =404;
-        }
-
-        # Handle Laravel routes
-        location / {
-            try_files $uri $uri/ /index.php?$query_string;
-        }
-
-        # PHP-FPM configuration
-        location ~ \.php$ {
-            include /etc/nginx/fastcgi_params;
-            fastcgi_pass app:9000;
-            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        }
-
-        # Deny access to sensitive files
-        location ~* \.(env|git|svn|htaccess|htpasswd|log|sh)$ {
-            deny all;
-        }
-
-        # Error pages
-        error_page 404 /404.html;
-        location = /404.html { }
-
-        error_page 500 502 503 504 /50x.html;
-        location = /50x.html { }
-    }
-}
