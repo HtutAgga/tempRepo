@@ -1,4 +1,8 @@
-ubuntu@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01/Documents/RGB-Deployment/rgbapplication$ sudo docker exec -it rgb_app sh
-# netstat -tulpn | grep 9000
-sh: 1: netstat: not found
-#
+172.16.66.69
+root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01# ip a | grep "inet "
+    inet 127.0.0.1/8 scope host lo
+    inet 172.16.66.69/24 brd 172.16.66.255 scope global eth0
+    inet 169.254.73.153/30 brd 169.254.73.155 scope global loopback0
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+    inet 172.19.0.1/16 brd 172.19.255.255 scope global br-91718d61a912
+root@GRGRGBSTGSVR:/mnt/c/Users/rgbdeveloper01#
