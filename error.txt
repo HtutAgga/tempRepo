@@ -1,3 +1,331 @@
+PS C:\Windows\system32> Get-NetFirewallRule | Where-Object { $_.DisplayName -like "*Docker*" }
+
+
+Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                848ACD19-54FB-4C1D-9024-5ADB71550807 - 0
+DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                848ACD19-54FB-4C1D-9024-5ADB71550807 - 0
+Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                848ACD19-54FB-4C1D-9024-5ADB71550807 - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
+
+Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                EB3338FE-F3E4-449F-980F-8144D078A9C1 - 0
+DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                EB3338FE-F3E4-449F-980F-8144D078A9C1 - 0
+Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                EB3338FE-F3E4-449F-980F-8144D078A9C1 - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
+
+Name                          : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+DisplayName                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+Description                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
+
+Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
+
+Name                          : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+DisplayName                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+Description                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
+
+Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
+                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
+
+
+
+PS C:\Windows\system32>
+PS C:\Windows\system32> New-NetFirewallRule -DisplayName "Allow HTTP Port 80" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 80
+
+
+Name                          : {3262419c-eec1-4fe2-a17e-0417a9ccc72d}
+DisplayName                   : Allow HTTP Port 80
+Description                   :
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+PolicyAppId                   :
+
+
+
+PS C:\Windows\system32> netstat -ano | findstr :80
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       6568
+  TCP    127.0.0.1:80           0.0.0.0:0              LISTENING       6568
+  TCP    127.0.0.1:80           127.0.0.1:49264        CLOSE_WAIT      6568
+  TCP    127.0.0.1:80           127.0.0.1:49296        ESTABLISHED     6568
+  TCP    127.0.0.1:80           127.0.0.1:49300        CLOSE_WAIT      6568
+  TCP    127.0.0.1:80           127.0.0.1:65270        CLOSE_WAIT      6568
+  TCP    127.0.0.1:80           127.0.0.1:65271        CLOSE_WAIT      6568
+  TCP    127.0.0.1:80           127.0.0.1:65272        CLOSE_WAIT      6568
+  TCP    127.0.0.1:80           127.0.0.1:65310        ESTABLISHED     6568
+  TCP    127.0.0.1:80           127.0.0.1:65344        ESTABLISHED     6568
+  TCP    127.0.0.1:49264        127.0.0.1:80           FIN_WAIT_2      1452
+  TCP    127.0.0.1:49296        127.0.0.1:80           ESTABLISHED     1452
+  TCP    127.0.0.1:49300        127.0.0.1:80           FIN_WAIT_2      1452
+  TCP    127.0.0.1:65270        127.0.0.1:80           FIN_WAIT_2      1452
+  TCP    127.0.0.1:65271        127.0.0.1:80           FIN_WAIT_2      1452
+  TCP    127.0.0.1:65272        127.0.0.1:80           FIN_WAIT_2      1452
+  TCP    127.0.0.1:65310        127.0.0.1:80           ESTABLISHED     6568
+  TCP    127.0.0.1:65344        127.0.0.1:80           ESTABLISHED     6568
+  TCP    172.16.66.69:80        172.16.66.69:49254     CLOSE_WAIT      6568
+  TCP    172.16.66.69:80        172.16.66.69:49255     CLOSE_WAIT      6568
+  TCP    172.16.66.69:80        172.16.66.69:49301     ESTABLISHED     6568
+  TCP    172.16.66.69:80        172.16.66.69:49302     ESTABLISHED     6568
+  TCP    172.16.66.69:80        172.16.66.69:65349     CLOSE_WAIT      6568
+  TCP    172.16.66.69:80        172.16.66.69:65350     CLOSE_WAIT      6568
+  TCP    172.16.66.69:49251     192.168.150.20:8027    ESTABLISHED     5988
+  TCP    172.16.66.69:49254     172.16.66.69:80        FIN_WAIT_2      1452
+  TCP    172.16.66.69:49255     172.16.66.69:80        FIN_WAIT_2      1452
+  TCP    172.16.66.69:49301     172.16.66.69:80        ESTABLISHED     1452
+  TCP    172.16.66.69:49302     172.16.66.69:80        ESTABLISHED     1452
+  TCP    172.16.66.69:61617     23.210.96.161:80       CLOSE_WAIT      9884
+  TCP    172.16.66.69:65349     172.16.66.69:80        FIN_WAIT_2      1452
+  TCP    172.16.66.69:65350     172.16.66.69:80        FIN_WAIT_2      1452
+PS C:\Windows\system32> tasklist | findstr 6568
+dllhost.exe                   6568 RDP-Tcp#0                  3     15,948 K
+PS C:\Windows\system32> Get-Service W3SVC
+Get-Service : Cannot find any service with service name 'W3SVC'.
+At line:1 char:1
++ Get-Service W3SVC
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (W3SVC:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+
+PS C:\Windows\system32> netstat -ano | findstr :8080
+  TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       6568
+  TCP    127.0.0.1:8080         0.0.0.0:0              LISTENING       6568
+PS C:\Windows\system32> tasklist | findstr 6568
+dllhost.exe                   6568 RDP-Tcp#0                  3     17,148 K
+PS C:\Windows\system32> netstat -ano | findstr :8081
+  TCP    0.0.0.0:8081           0.0.0.0:0              LISTENING       6568
+  TCP    127.0.0.1:8081         0.0.0.0:0              LISTENING       6568
+  TCP    127.0.0.1:8081         127.0.0.1:49589        ESTABLISHED     6568
+  TCP    127.0.0.1:8081         127.0.0.1:49590        ESTABLISHED     6568
+  TCP    127.0.0.1:8081         127.0.0.1:49592        ESTABLISHED     6568
+  TCP    127.0.0.1:49589        127.0.0.1:8081         ESTABLISHED     1452
+  TCP    127.0.0.1:49590        127.0.0.1:8081         ESTABLISHED     1452
+  TCP    127.0.0.1:49592        127.0.0.1:8081         ESTABLISHED     1452
+  TCP    172.16.66.69:8081      172.16.66.69:49579     ESTABLISHED     6568
+  TCP    172.16.66.69:8081      172.16.66.69:49580     ESTABLISHED     6568
+  TCP    172.16.66.69:49579     172.16.66.69:8081      ESTABLISHED     1452
+  TCP    172.16.66.69:49580     172.16.66.69:8081      ESTABLISHED     1452
+PS C:\Windows\system32> tasklist | findstr 6568
+dllhost.exe                   6568 RDP-Tcp#0                  3     17,320 K
+PS C:\Windows\system32> wmic process where processid=6568 get CommandLine
+CommandLine
+C:\Windows\system32\DllHost.exe /Processid:{17696EAC-9568-4CF5-BB8C-82515AAD6C09}
+
+PS C:\Windows\system32> Get-ItemProperty HKCR:\CLSID\{17696EAC-9568-4CF5-BB8C-82515AAD6C09}
+Get-ItemProperty : Cannot find drive. A drive with the name 'HKCR' does not exist.
+At line:1 char:1
++ Get-ItemProperty HKCR:\CLSID\{17696EAC-9568-4CF5-BB8C-82515AAD6C09}
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKCR:String) [Get-ItemProperty], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetItemPropertyCommand
+
+PS C:\Windows\system32> reg query "HKLM\SOFTWARE\Classes\CLSID\{17696EAC-9568-4CF5-BB8C-82515AAD6C09}" /s
+ERROR: The system was unable to find the specified registry key or value.
+PS C:\Windows\system32> tasklist /M /FI "IMAGENAME eq dllhost.exe"
+
+Image Name                     PID Modules
+========================= ======== ============================================
+dllhost.exe                   5440 ntdll.dll, KERNEL32.DLL, KERNELBASE.dll,
+                                   ucrtbase.dll, combase.dll, RPCRT4.dll,
+                                   kernel.appcore.dll, msvcrt.dll,
+                                   bcryptPrimitives.dll, clbcatq.dll,
+                                   user32.dll, win32u.dll, GDI32.dll,
+                                   gdi32full.dll, msvcp_win.dll, sechost.dll,
+                                   bcrypt.dll, COMSVCS.DLL, OLEAUT32.dll,
+                                   ole32.dll, CRYPTSP.dll, rsaenh.dll,
+                                   CRYPTBASE.dll, txflog.dll, es.dll,
+                                   PROPSYS.dll, sxs.dll, ADVAPI32.dll,
+                                   XOLEHLP.dll, MSDTCPRX.DLL, WS2_32.dll,
+                                   SHLWAPI.dll, CLUSAPI.dll, RESUTILS.dll,
+                                   ktmw32.dll, MTXCLU.DLL, wkscli.dll,
+                                   cscapi.dll, netutils.dll, sspicli.dll,
+                                   mswsock.dll, DNSAPI.dll, IPHLPAPI.DLL,
+                                   NSI.dll, fwpuclnt.dll, rasadhlp.dll,
+                                   catsrv.dll, MfcSubs.dll, catsrvps.dll,
+                                   catsrvut.dll
+dllhost.exe                   5716 ntdll.dll, KERNEL32.DLL, KERNELBASE.dll,
+                                   ucrtbase.dll, combase.dll, RPCRT4.dll,
+                                   kernel.appcore.dll, msvcrt.dll,
+                                   bcryptPrimitives.dll, clbcatq.dll,
+                                   sechost.dll, bcrypt.dll, user32.dll,
+                                   win32u.dll, GDI32.dll, gdi32full.dll,
+                                   msvcp_win.dll, IMM32.DLL, uxtheme.dll,
+                                   webplatstorageserver.dll, OLEAUT32.dll,
+                                   advapi32.dll, iertutil.dll, netutils.dll,
+                                   srvcli.dll, windows.storage.dll,
+                                   SHCORE.dll, shlwapi.dll, profapi.dll,
+                                   ESENT.dll, CRYPTBASE.DLL
+dllhost.exe                  12884 ntdll.dll, KERNEL32.DLL, KERNELBASE.dll,
+                                   ucrtbase.dll, combase.dll, RPCRT4.dll,
+                                   kernel.appcore.dll, msvcrt.dll,
+                                   bcryptPrimitives.dll, clbcatq.dll,
+                                   sechost.dll, bcrypt.dll, user32.dll,
+                                   win32u.dll, GDI32.dll, gdi32full.dll,
+                                   msvcp_win.dll, wininet.dll,
+                                   windows.storage.dll, SHCORE.dll,
+                                   shlwapi.dll, profapi.dll, iertutil.dll,
+                                   advapi32.dll, srvcli.dll, netutils.dll,
+                                   OLEAUT32.dll, ESENT.dll, CRYPTBASE.DLL
+dllhost.exe                   6360 ntdll.dll, KERNEL32.DLL, KERNELBASE.dll,
+                                   ucrtbase.dll, combase.dll, RPCRT4.dll,
+                                   kernel.appcore.dll, msvcrt.dll,
+                                   bcryptPrimitives.dll, clbcatq.dll,
+                                   user32.dll, win32u.dll, GDI32.dll,
+                                   gdi32full.dll, msvcp_win.dll, IMM32.DLL,
+                                   sechost.dll, bcrypt.dll, uxtheme.dll,
+                                   vp9fs.dll, WS2_32.dll, MSWSOCK.dll,
+                                   vmdevicehost.dll, vmvirtio.dll,
+                                   OLEAUT32.dll, ntmarta.dll, vmprox.dll,
+                                   tdh.dll, wshhyperv.dll
+dllhost.exe                   6568 ntdll.dll, KERNEL32.DLL, KERNELBASE.dll,
+                                   ucrtbase.dll, combase.dll, RPCRT4.dll,
+                                   kernel.appcore.dll, msvcrt.dll,
+                                   bcryptPrimitives.dll, clbcatq.dll,
+                                   user32.dll, win32u.dll, GDI32.dll,
+                                   gdi32full.dll, msvcp_win.dll, IMM32.DLL,
+                                   sechost.dll, bcrypt.dll, uxtheme.dll,
+                                   wsldevicehost.dll, advapi32.dll,
+                                   vmdevicehost.dll, iphlpapi.dll,
+                                   OLEAUT32.dll, CRYPTBASE.DLL, ntmarta.dll,
+                                   vmprox.dll, tdh.dll, NSI.dll,
+                                   dhcpcsvc6.DLL, dhcpcsvc.DLL, DNSAPI.dll,
                                    vid.dll, ws2_32.dll, mswsock.dll
 PS C:\Windows\system32> Get-EventLog -LogName System -Source DCOM -Newest 20
 
@@ -25,4 +353,765 @@ PS C:\Windows\system32> Get-EventLog -LogName System -Source DCOM -Newest 20
    46246 Jan 27 13:00  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
 
 
-PS C:\Windows\system32>
+PS C:\Windows\system32> Get-WinEvent -LogName System | Where-Object { $_.Id -eq 10016 -or $_.Id -eq 10005 } | Format-List -Property *
+
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 99555
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1212
+ThreadId             : 10260
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 2/26/2025 8:12:36 AM
+ActivityId           : 31bca515-9186-4c7d-a420-a443b4c71d02
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 98620
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1212
+ThreadId             : 7320
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 2/25/2025 1:01:17 PM
+ActivityId           : 89bb024f-3e93-4280-b8bc-d972a7c28c90
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 96373
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1208
+ThreadId             : 5156
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 2/24/2025 9:19:52 AM
+ActivityId           : 9ac527fb-1e27-4a97-a6b4-50186d3acc35
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 95989
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1212
+ThreadId             : 11312
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 2/24/2025 8:33:30 AM
+ActivityId           : d48bfa8d-d834-4d22-bbbc-656c56bb063c
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 92296
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1228
+ThreadId             : 6364
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 2/21/2025 10:23:49 AM
+ActivityId           : 8c3a7f1f-dd52-42c2-a561-8c49f92bb2f8
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : DCOM got error "1115" attempting to start the service TrustedInstaller with arguments "Unavailable" in order to run the server:
+                       {752073A1-23F2-4396-85F0-8FDB879ED0ED}
+Id                   : 10005
+Version              : 0
+Qualifiers           : 0
+Level                : 2
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 91940
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1176
+ThreadId             : 27796
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-18
+TimeCreated          : 2/21/2025 9:41:21 AM
+ActivityId           : 96ac2735-07db-4f42-8136-b402dcc011d4
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Error
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty}
+
+Message              : DCOM got error "1115" attempting to start the service TrustedInstaller with arguments "Unavailable" in order to run the server:
+                       {752073A1-23F2-4396-85F0-8FDB879ED0ED}
+Id                   : 10005
+Version              : 0
+Qualifiers           : 0
+Level                : 2
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 91939
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1176
+ThreadId             : 27796
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-18
+TimeCreated          : 2/21/2025 9:41:20 AM
+ActivityId           : 06996328-7f16-4438-9901-263d7db588b1
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Error
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty}
+
+Message              : DCOM got error "1115" attempting to start the service TrustedInstaller with arguments "Unavailable" in order to run the server:
+                       {752073A1-23F2-4396-85F0-8FDB879ED0ED}
+Id                   : 10005
+Version              : 0
+Qualifiers           : 0
+Level                : 2
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 91938
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1176
+ThreadId             : 27796
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-18
+TimeCreated          : 2/21/2025 9:41:19 AM
+ActivityId           : fd66a97c-341f-4e40-8781-54ea49c31c4a
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Error
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty}
+
+Message              : DCOM got error "1115" attempting to start the service TrustedInstaller with arguments "Unavailable" in order to run the server:
+                       {752073A1-23F2-4396-85F0-8FDB879ED0ED}
+Id                   : 10005
+Version              : 0
+Qualifiers           : 0
+Level                : 2
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 91937
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1176
+ThreadId             : 17168
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-18
+TimeCreated          : 2/21/2025 9:41:17 AM
+ActivityId           : 9bf36241-878b-4a88-8842-7d21d1c355d1
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Error
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty}
+
+Message              : DCOM got error "1115" attempting to start the service TrustedInstaller with arguments "Unavailable" in order to run the server:
+                       {752073A1-23F2-4396-85F0-8FDB879ED0ED}
+Id                   : 10005
+Version              : 0
+Qualifiers           : 0
+Level                : 2
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 91936
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1176
+ThreadId             : 17168
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-18
+TimeCreated          : 2/21/2025 9:41:16 AM
+ActivityId           : 8413d89d-717e-49bb-93ae-5f6881fe2e05
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Error
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty}
+
+Message              : DCOM got error "1115" attempting to start the service TrustedInstaller with arguments "Unavailable" in order to run the server:
+                       {752073A1-23F2-4396-85F0-8FDB879ED0ED}
+Id                   : 10005
+Version              : 0
+Qualifiers           : 0
+Level                : 2
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 91935
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1176
+ThreadId             : 17168
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-18
+TimeCreated          : 2/21/2025 9:41:15 AM
+ActivityId           : 6f3430dc-36d3-458d-a820-7263ba62e479
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Error
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 76932
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1288
+ThreadId             : 24588
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 2/14/2025 11:10:05 AM
+ActivityId           : 227e863b-5441-4c59-9cae-4d0c528a9916
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 76845
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1288
+ThreadId             : 25196
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 2/14/2025 10:32:11 AM
+ActivityId           : ab7a84fc-ea68-4e32-b70a-ee5dd0b2aa71
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 69820
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1288
+ThreadId             : 9636
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 2/10/2025 1:19:39 PM
+ActivityId           : 7c4c953e-46e3-4eb9-94f2-6ed983a97b26
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 62608
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1288
+ThreadId             : 17352
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 2/6/2025 12:59:51 PM
+ActivityId           : 8501ecd4-af3a-43fd-95b2-2dfb77caf9f6
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 62508
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1288
+ThreadId             : 15804
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 2/6/2025 11:56:55 AM
+ActivityId           : b48155d9-cba8-4a09-8df6-2b47d2e089b4
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 62463
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1288
+ThreadId             : 12300
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 2/6/2025 11:55:35 AM
+ActivityId           : 0488e9d5-aa3a-4515-a5c5-95e09478c578
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\aub87tw SID (S-1-5-21-3287311636-834118777-251219443-1001) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 58788
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1288
+ThreadId             : 808
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1001
+TimeCreated          : 2/4/2025 1:45:30 PM
+ActivityId           : 4dd4c61f-0abe-46e0-aa3a-0de4f933e6fc
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 46340
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1296
+ThreadId             : 3032
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 1/27/2025 1:44:46 PM
+ActivityId           : f9cd5b5d-73a0-4b9b-898f-421875a35e9f
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 46246
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1296
+ThreadId             : 1520
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 1/27/2025 1:00:31 PM
+ActivityId           : 6735fd93-8330-4674-abfa-4491651b1d62
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 46078
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1296
+ThreadId             : 19736
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 1/27/2025 11:10:05 AM
+ActivityId           : 0f15caf7-71a6-4a3d-a39c-9a44fa38450a
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\Administrator SID (S-1-5-21-3287311636-834118777-251219443-500) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 45976
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1296
+ThreadId             : 8848
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-500
+TimeCreated          : 1/27/2025 10:25:19 AM
+ActivityId           : 7e1c1a7e-e20d-4cd1-b81f-7cc0b0634d7a
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+Message              : The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+                       {21B896BF-008D-4D01-A27B-26061B960DD7}
+                        and APPID
+                       {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+                        to the user GRGRGBSTGSVR\rgbdeveloper01 SID (S-1-5-21-3287311636-834118777-251219443-1002) from address LocalHost (Using LRPC) running in the application container Unavailable SID
+                       (Unavailable). This security permission can be modified using the Component Services administrative tool.
+Id                   : 10016
+Version              : 0
+Qualifiers           : 0
+Level                : 3
+Task                 : 0
+Opcode               : 0
+Keywords             : -9187343239835811840
+RecordId             : 41865
+ProviderName         : Microsoft-Windows-DistributedCOM
+ProviderId           : 1b562e86-b7aa-4131-badc-b6f3a001407e
+LogName              : System
+ProcessId            : 1296
+ThreadId             : 14040
+MachineName          : GRGRGBSTGSVR
+UserId               : S-1-5-21-3287311636-834118777-251219443-1002
+TimeCreated          : 1/23/2025 10:43:15 AM
+ActivityId           : ad965058-992d-4c99-9c8b-f75e83de76b6
+RelatedActivityId    :
+ContainerLog         : System
+MatchedQueryIds      : {}
+Bookmark             : System.Diagnostics.Eventing.Reader.EventBookmark
+LevelDisplayName     : Warning
+OpcodeDisplayName    : Info
+TaskDisplayName      :
+KeywordsDisplayNames : {Classic}
+Properties           : {System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty, System.Diagnostics.Eventing.Reader.EventProperty,
+                       System.Diagnostics.Eventing.Reader.EventProperty...}
+
+
