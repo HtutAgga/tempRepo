@@ -1,44 +1,18 @@
-networks:
-  rgb_network:
-    driver: bridge
-
-services:
-  nginx:
-    image: nginx:alpine
-    restart: always
-    container_name: rgb_nginx
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./:/var/www/html:cached # Mount the local project directory
-    ports:
-      - 80:80
-    depends_on:
-      - app
-    networks:
-      - rgb_network
-
-  app:
-    build:
-      context: .
-    container_name: rgb_app
-    restart: always
-    working_dir: /var/www/html
-    volumes:
-      - ./:/var/www/html:cached # Mount the local project directory
-    ports:
-      - 9000:9000
-    environment:
-      APP_ENV: local
-      APP_DEBUG: false
-      DB_CONNECTION: sqlsrv
-      DB_HOST: 172.16.66.60
-      DB_PORT: 1433
-      DB_DATABASE: RGB_Bottle_Collect
-      DB_USERNAME: sa
-      DB_PASSWORD: sa@123QWEasz
-      DB_TRUST_CERTIFICATE: true
-    networks:
-      - rgb_network
-
-volumes:
-  laravel_app_data:
+root@GRGRGBSTGSVR:/mnt/e/RGB-Deployment/rgbapplication# docker-compose logs app
+rgb_app  | [26-Feb-2025 07:25:04] NOTICE: fpm is running, pid 1
+rgb_app  | [26-Feb-2025 07:25:04] NOTICE: ready to handle connections
+root@GRGRGBSTGSVR:/mnt/e/RGB-Deployment/rgbapplication# docker ps
+CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS          PORTS                               NAMES
+7c9858c9c303   nginx:alpine         "/docker-entrypoint.…"   52 seconds ago   Up 50 seconds   0.0.0.0:80->80/tcp, :::80->80/tcp   rgb_nginx
+6e12199287fe   rgbapplication-app   "docker-php-entrypoi…"   52 seconds ago   Up 50 seconds   9000/tcp                            rgb_app
+root@GRGRGBSTGSVR:/mnt/e/RGB-Deployment/rgbapplication# docker-compose logs nginx
+rgb_nginx  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+rgb_nginx  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+rgb_nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+rgb_nginx  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+rgb_nginx  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+rgb_nginx  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+rgb_nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+rgb_nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+rgb_nginx  | /docker-entrypoint.sh: Configuration complete; ready for start up
+root@GRGRGBSTGSVR:/mnt/e/RGB-Deployment/rgbapplication#
