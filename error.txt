@@ -1,153 +1,44 @@
-PS C:\Windows\system32> Get-NetFirewallRule | Where-Object { $_.DisplayName -like "*Docker*" }
+networks:
+  rgb_network:
+    driver: bridge
 
+services:
+  nginx:
+    image: nginx:alpine
+    restart: always
+    container_name: rgb_nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./:/var/www/html:cached # Mount the local project directory
+    ports:
+      - 80:80
+    depends_on:
+      - app
+    networks:
+      - rgb_network
 
-Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                848ACD19-54FB-4C1D-9024-5ADB71550807 - 0
-DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                848ACD19-54FB-4C1D-9024-5ADB71550807 - 0
-Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                848ACD19-54FB-4C1D-9024-5ADB71550807 - 0
-DisplayGroup                  :
-Group                         :
-Enabled                       : True
-Profile                       : Any
-Platform                      : {}
-Direction                     : Inbound
-Action                        : Allow
-EdgeTraversalPolicy           : Block
-LooseSourceMapping            : False
-LocalOnlyMapping              : False
-Owner                         :
-PrimaryStatus                 : OK
-Status                        : The rule was parsed successfully from the store. (65536)
-EnforcementStatus             : NotApplicable
-PolicyStoreSource             : PersistentStore
-PolicyStoreSourceType         : Local
-RemoteDynamicKeywordAddresses : {}
-PolicyAppId                   :
+  app:
+    build:
+      context: .
+    container_name: rgb_app
+    restart: always
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html:cached # Mount the local project directory
+    ports:
+      - 9000:9000
+    environment:
+      APP_ENV: local
+      APP_DEBUG: false
+      DB_CONNECTION: sqlsrv
+      DB_HOST: 172.16.66.60
+      DB_PORT: 1433
+      DB_DATABASE: RGB_Bottle_Collect
+      DB_USERNAME: sa
+      DB_PASSWORD: sa@123QWEasz
+      DB_TRUST_CERTIFICATE: true
+    networks:
+      - rgb_network
 
-Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                EB3338FE-F3E4-449F-980F-8144D078A9C1 - 0
-DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                EB3338FE-F3E4-449F-980F-8144D078A9C1 - 0
-Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                EB3338FE-F3E4-449F-980F-8144D078A9C1 - 0
-DisplayGroup                  :
-Group                         :
-Enabled                       : True
-Profile                       : Any
-Platform                      : {}
-Direction                     : Inbound
-Action                        : Allow
-EdgeTraversalPolicy           : Block
-LooseSourceMapping            : False
-LocalOnlyMapping              : False
-Owner                         :
-PrimaryStatus                 : OK
-Status                        : The rule was parsed successfully from the store. (65536)
-EnforcementStatus             : NotApplicable
-PolicyStoreSource             : PersistentStore
-PolicyStoreSourceType         : Local
-RemoteDynamicKeywordAddresses : {}
-PolicyAppId                   :
-
-Name                          : HNS Container Networking -Docker DNS (System32-TCP-In) -
-                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
-DisplayName                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
-                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
-Description                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
-                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
-DisplayGroup                  :
-Group                         :
-Enabled                       : True
-Profile                       : Any
-Platform                      : {}
-Direction                     : Inbound
-Action                        : Allow
-EdgeTraversalPolicy           : Block
-LooseSourceMapping            : False
-LocalOnlyMapping              : False
-Owner                         :
-PrimaryStatus                 : OK
-Status                        : The rule was parsed successfully from the store. (65536)
-EnforcementStatus             : NotApplicable
-PolicyStoreSource             : PersistentStore
-PolicyStoreSourceType         : Local
-RemoteDynamicKeywordAddresses : {}
-PolicyAppId                   :
-
-Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
-DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
-Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                E08E7F8C-B81B-4852-91E7-7C61B7AE040F - 0
-DisplayGroup                  :
-Group                         :
-Enabled                       : True
-Profile                       : Any
-Platform                      : {}
-Direction                     : Inbound
-Action                        : Allow
-EdgeTraversalPolicy           : Block
-LooseSourceMapping            : False
-LocalOnlyMapping              : False
-Owner                         :
-PrimaryStatus                 : OK
-Status                        : The rule was parsed successfully from the store. (65536)
-EnforcementStatus             : NotApplicable
-PolicyStoreSource             : PersistentStore
-PolicyStoreSourceType         : Local
-RemoteDynamicKeywordAddresses : {}
-PolicyAppId                   :
-
-Name                          : HNS Container Networking -Docker DNS (System32-TCP-In) -
-                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
-DisplayName                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
-                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
-Description                   : HNS Container Networking -Docker DNS (System32-TCP-In) -
-                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
-DisplayGroup                  :
-Group                         :
-Enabled                       : True
-Profile                       : Any
-Platform                      : {}
-Direction                     : Inbound
-Action                        : Allow
-EdgeTraversalPolicy           : Block
-LooseSourceMapping            : False
-LocalOnlyMapping              : False
-Owner                         :
-PrimaryStatus                 : OK
-Status                        : The rule was parsed successfully from the store. (65536)
-EnforcementStatus             : NotApplicable
-PolicyStoreSource             : PersistentStore
-PolicyStoreSourceType         : Local
-RemoteDynamicKeywordAddresses : {}
-PolicyAppId                   :
-
-Name                          : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
-DisplayName                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
-Description                   : HNS Container Networking -Docker DNS (ProgramFiles-TCP-In) -
-                                452D56E0-4D85-4CDE-8014-5DB2E43AC769 - 0
-DisplayGroup                  :
-Group                         :
-Enabled                       : True
-Profile                       : Any
-Platform                      : {}
-Direction                     : Inbound
-Action                        : Allow
-EdgeTraversalPolicy           : Block
-LooseSourceMapping            : False
-LocalOnlyMapping              : False
-Owner                         :
-PrimaryStatus                 : OK
-Status                        : The rule was parsed successfully from the store. (65536)
-EnforcementStatus             : NotApplicable
-PolicyStoreSource             : PersistentStore
-PolicyStoreSourceType         : Local
-RemoteDynamicKeywordAddresses : {}
-PolicyAppId                   :
-
+volumes:
+  laravel_app_data:
