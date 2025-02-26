@@ -1,70 +1,28 @@
-PS C:\Windows\system32> tasklist /M /FI "IMAGENAME eq dllhost.exe"
-
-Image Name                     PID Modules
-========================= ======== ============================================
-dllhost.exe                   5440 ntdll.dll, KERNEL32.DLL, KERNELBASE.dll,
-                                   ucrtbase.dll, combase.dll, RPCRT4.dll,
-                                   kernel.appcore.dll, msvcrt.dll,
-                                   bcryptPrimitives.dll, clbcatq.dll,
-                                   user32.dll, win32u.dll, GDI32.dll,
-                                   gdi32full.dll, msvcp_win.dll, sechost.dll,
-                                   bcrypt.dll, COMSVCS.DLL, OLEAUT32.dll,
-                                   ole32.dll, CRYPTSP.dll, rsaenh.dll,
-                                   CRYPTBASE.dll, txflog.dll, es.dll,
-                                   PROPSYS.dll, sxs.dll, ADVAPI32.dll,
-                                   XOLEHLP.dll, MSDTCPRX.DLL, WS2_32.dll,
-                                   SHLWAPI.dll, CLUSAPI.dll, RESUTILS.dll,
-                                   ktmw32.dll, MTXCLU.DLL, wkscli.dll,
-                                   cscapi.dll, netutils.dll, sspicli.dll,
-                                   mswsock.dll, DNSAPI.dll, IPHLPAPI.DLL,
-                                   NSI.dll, fwpuclnt.dll, rasadhlp.dll,
-                                   catsrv.dll, MfcSubs.dll, catsrvps.dll,
-                                   catsrvut.dll
-dllhost.exe                   5716 ntdll.dll, KERNEL32.DLL, KERNELBASE.dll,
-                                   ucrtbase.dll, combase.dll, RPCRT4.dll,
-                                   kernel.appcore.dll, msvcrt.dll,
-                                   bcryptPrimitives.dll, clbcatq.dll,
-                                   sechost.dll, bcrypt.dll, user32.dll,
-                                   win32u.dll, GDI32.dll, gdi32full.dll,
-                                   msvcp_win.dll, IMM32.DLL, uxtheme.dll,
-                                   webplatstorageserver.dll, OLEAUT32.dll,
-                                   advapi32.dll, iertutil.dll, netutils.dll,
-                                   srvcli.dll, windows.storage.dll,
-                                   SHCORE.dll, shlwapi.dll, profapi.dll,
-                                   ESENT.dll, CRYPTBASE.DLL
-dllhost.exe                  12884 ntdll.dll, KERNEL32.DLL, KERNELBASE.dll,
-                                   ucrtbase.dll, combase.dll, RPCRT4.dll,
-                                   kernel.appcore.dll, msvcrt.dll,
-                                   bcryptPrimitives.dll, clbcatq.dll,
-                                   sechost.dll, bcrypt.dll, user32.dll,
-                                   win32u.dll, GDI32.dll, gdi32full.dll,
-                                   msvcp_win.dll, wininet.dll,
-                                   windows.storage.dll, SHCORE.dll,
-                                   shlwapi.dll, profapi.dll, iertutil.dll,
-                                   advapi32.dll, srvcli.dll, netutils.dll,
-                                   OLEAUT32.dll, ESENT.dll, CRYPTBASE.DLL
-dllhost.exe                   6360 ntdll.dll, KERNEL32.DLL, KERNELBASE.dll,
-                                   ucrtbase.dll, combase.dll, RPCRT4.dll,
-                                   kernel.appcore.dll, msvcrt.dll,
-                                   bcryptPrimitives.dll, clbcatq.dll,
-                                   user32.dll, win32u.dll, GDI32.dll,
-                                   gdi32full.dll, msvcp_win.dll, IMM32.DLL,
-                                   sechost.dll, bcrypt.dll, uxtheme.dll,
-                                   vp9fs.dll, WS2_32.dll, MSWSOCK.dll,
-                                   vmdevicehost.dll, vmvirtio.dll,
-                                   OLEAUT32.dll, ntmarta.dll, vmprox.dll,
-                                   tdh.dll, wshhyperv.dll
-dllhost.exe                   6568 ntdll.dll, KERNEL32.DLL, KERNELBASE.dll,
-                                   ucrtbase.dll, combase.dll, RPCRT4.dll,
-                                   kernel.appcore.dll, msvcrt.dll,
-                                   bcryptPrimitives.dll, clbcatq.dll,
-                                   user32.dll, win32u.dll, GDI32.dll,
-                                   gdi32full.dll, msvcp_win.dll, IMM32.DLL,
-                                   sechost.dll, bcrypt.dll, uxtheme.dll,
-                                   wsldevicehost.dll, advapi32.dll,
-                                   vmdevicehost.dll, iphlpapi.dll,
-                                   OLEAUT32.dll, CRYPTBASE.DLL, ntmarta.dll,
-                                   vmprox.dll, tdh.dll, NSI.dll,
-                                   dhcpcsvc6.DLL, dhcpcsvc.DLL, DNSAPI.dll,
                                    vid.dll, ws2_32.dll, mswsock.dll
+PS C:\Windows\system32> Get-EventLog -LogName System -Source DCOM -Newest 20
+
+   Index Time          EntryType   Source                 InstanceID Message
+   ----- ----          ---------   ------                 ---------- -------
+   99555 Feb 26 08:12  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   98620 Feb 25 13:01  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   96373 Feb 24 09:19  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   95989 Feb 24 08:33  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   92296 Feb 21 10:23  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   91940 Feb 21 09:41  Error       DCOM                        10005 The description for Event ID '10005' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   91939 Feb 21 09:41  Error       DCOM                        10005 The description for Event ID '10005' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   91938 Feb 21 09:41  Error       DCOM                        10005 The description for Event ID '10005' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   91937 Feb 21 09:41  Error       DCOM                        10005 The description for Event ID '10005' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   91936 Feb 21 09:41  Error       DCOM                        10005 The description for Event ID '10005' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   91935 Feb 21 09:41  Error       DCOM                        10005 The description for Event ID '10005' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   76932 Feb 14 11:10  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   76845 Feb 14 10:32  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   69820 Feb 10 13:19  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   62608 Feb 06 12:59  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   62508 Feb 06 11:56  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   62463 Feb 06 11:55  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   58788 Feb 04 13:45  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   46340 Jan 27 13:44  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+   46246 Jan 27 13:00  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessary registry information...
+
+
 PS C:\Windows\system32>
